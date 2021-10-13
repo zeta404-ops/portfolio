@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import MainPage from './components/MainPage';
 import ErrorPage from './components/ErrorPage';
 import SomeExampleComponent from './components/example/someExampleComponent';
