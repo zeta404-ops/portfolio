@@ -1,5 +1,6 @@
-import React from 'react'
-import MyFirstComponent from './components/myFirstComponent';
+import React, { useEffect } from 'react'
+import MainPage from './components/MainPage';
+import ErrorPage from './components/ErrorPage';
 import SomeExampleComponent from './components/example/someExampleComponent';
 import styles from './App.module.scss'
 
@@ -11,6 +12,7 @@ import {
 } from 'react-router-dom';
 
 const App: React.FC = () => {
+
   return (
 
    <Router basename='/portfolio'>
@@ -23,8 +25,11 @@ const App: React.FC = () => {
 
    <Switch>
      {/* Changing content comes here */}
-     <Route exact path='/' component={MyFirstComponent} />
+     <Route exact path='/' component={MainPage} />
      <Route exact path='/example' component={SomeExampleComponent}/>
+     <Route component={ErrorPage} />
+
+
    </Switch>
 
    {/* The footer and other components you want to display on all pages come here */}

@@ -1,10 +1,10 @@
 import React from 'react'
 
-type MyFirstComponentProps = {
+type MainPageProps = {
 
 }
 
-const MyFirstComponent: React.FC<MyFirstComponentProps> = () => {
+const MainPage: React.FC<MainPageProps> = () => {
   return (
     <div>
       <h1>Hello, React!</h1>
@@ -13,4 +13,4 @@ const MyFirstComponent: React.FC<MyFirstComponentProps> = () => {
   )
 }
 
-export default MyFirstComponent
+export default MainPage
