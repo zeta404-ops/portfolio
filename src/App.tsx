@@ -25,13 +25,13 @@ const App: React.FC = () => {
    {/* The navigation bar and other components you want to display on all pages come here */}
    <div className={styles.navbar}>
 
-     <Link to='example'>JOIN</Link>
+     <Link to='main'>JOIN</Link>
    </div>
 
    <Switch>
      {/* Changing content comes here */}
      <Route exact path='/' component={MainPage} />
-     <Route exact path='/example' component={SomeExampleComponent}/>
+     <Route exact path='/main' component={SomeExampleComponent}/>
      <Route component={ErrorPage} />
 
 

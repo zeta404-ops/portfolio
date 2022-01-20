@@ -25,7 +25,6 @@ const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
     </ReactBootStrap.Container>
   </ReactBootStrap.Navbar>
   </div>
-  
 </>
 <div className={styles.picBanner}>
 <img className="pic" src={banner} alt='Banner for web dev'/>
