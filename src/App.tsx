@@ -2,6 +2,7 @@ import React from 'react'
 import MainPage from './components/MainPage';
 import ErrorPage from './components/ErrorPage';
 import SomeExampleComponent from './components/example/someExampleComponent';
+import styles from './App.module.scss'
 
 import {
   BrowserRouter as Router,
@@ -22,11 +23,10 @@ const App: React.FC = () => {
   crossOrigin="anonymous"
 />
    {/* The navigation bar and other components you want to display on all pages come here */}
-   {/* <div className={styles.navbar}>
+   <div className={styles.navbar}>
 
-     <Link to='/'>Front page</Link>
-     <Link to='example'>Look my example component</Link>
-   </div> */}
+     <Link to='example'>JOIN</Link>
+   </div>
 
    <Switch>
      {/* Changing content comes here */}
