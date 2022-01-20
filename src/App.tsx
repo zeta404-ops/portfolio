@@ -2,7 +2,6 @@ import React from 'react'
 import MainPage from './components/MainPage';
 import ErrorPage from './components/ErrorPage';
 import SomeExampleComponent from './components/example/someExampleComponent';
-import styles from './App.module.scss'
 
 import {
   BrowserRouter as Router,
