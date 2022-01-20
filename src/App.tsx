@@ -16,12 +16,18 @@ const App: React.FC = () => {
   return (
 
    <Router basename='/portfolio'>
-      
+         <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+  crossOrigin="anonymous"
+/>
    {/* The navigation bar and other components you want to display on all pages come here */}
-   <div className={styles.navbar}>
+   {/* <div className={styles.navbar}>
+
      <Link to='/'>Front page</Link>
      <Link to='example'>Look my example component</Link>
-   </div>
+   </div> */}
 
    <Switch>
      {/* Changing content comes here */}
