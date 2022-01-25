@@ -26,7 +26,7 @@ const About: React.FC<AboutProps> = () => {
   </div>
 </>
 <div className={styles.picBanner}>
-<img className="pic" src={aboutme} alt='about for about me'/>
+<img className="pic" src={aboutme} alt='about me banner'/>
 </div>
 
 

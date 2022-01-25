@@ -1,13 +1,14 @@
 import React from 'react'
-import styles from './someExampleComponent.module.scss'
-import banner from '../video/bannerr.gif'
+import projects from '../../video/projects.gif'
+import styles from './projects.module.scss'
+
 import * as ReactBootStrap from "react-bootstrap"
-import {Link} from "react-router-dom";
-type SomeExampleComponentProps = {
+
+type ProjectProps = {
 
 }
 
-const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
+const Project: React.FC<ProjectProps> = () => {
   return (
     
     <div className={styles.container}>
@@ -26,17 +27,21 @@ const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
   </div>
 </>
 <div className={styles.picBanner}>
-<img className="pic" src={banner} alt='Banner for web dev'/>
-
+<img className="pic" src={projects} alt='projects banner'/>
 </div>
-<Link to="/Dashboard"><p>Explore</p></Link>
+
 
 <div 
 >
-<h3 className="zeta" >Hello! Welcome to my portfolio profile.<br></br>
-I am Zhinar Masood.<br></br>
-I study information and communication technology and I'm excited about programming and cyber security.<br></br>
-Here you will find my CV and some of my projects.</h3>
+<h3 className="zeta" >HERE YOU WILL SEE SOME OF MY PERSONAL PROJECTS</h3>
+
+<a className='ftw' href="https://github.com/zeta404-ops/FindTheUnknown"><img src="https://gh-card.dev/repos/zeta404-ops/FindTheUnknown.svg?fullname="/></a>
+<br></br>
+<a className='varia' href="https://github.com/varia-ict/varia-agile-20C-ryhma-3"><img src="https://gh-card.dev/repos/varia-ict/varia-agile-20C-ryhma-3.svg?fullname="/></a>
+<br></br>
+<a className='port' href="https://github.com/zeta404-ops/portfolio"><img src="https://gh-card.dev/repos/zeta404-ops/portfolio.svg?fullname="/></a>
+<br></br>
+
 
 </div>
 
@@ -46,4 +51,4 @@ Here you will find my CV and some of my projects.</h3>
   )
 }
 
-export default SomeExampleComponent
+export default Project
