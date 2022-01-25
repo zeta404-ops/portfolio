@@ -1,13 +1,13 @@
 import React from 'react'
-import styles from './someExampleComponent.module.scss'
+import styles from './mainpage.module.scss'
 import banner from '../video/bannerr.gif'
 import * as ReactBootStrap from "react-bootstrap"
 import {Link} from "react-router-dom";
-type SomeExampleComponentProps = {
+type MainPageProps = {
 
 }
 
-const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
+const MainPage: React.FC<MainPageProps> = () => {
   return (
     
     <div className={styles.container}>
@@ -31,7 +31,7 @@ const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
 <img className="pic" src={banner} alt='Banner for web dev'/>
 
 </div>
-<Link to="/Dashboard"><p>Explore</p></Link>
+<Link to="/aboutme"><p>Explore</p></Link>
 
 <div 
 >
@@ -48,4 +48,4 @@ Here you will find my CV and some of my projects.</h3>
   )
 }
 
-export default SomeExampleComponent
+export default MainPage

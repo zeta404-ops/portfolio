@@ -19,7 +19,6 @@ const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
     <ReactBootStrap.Nav className="me-auto">
       <ReactBootStrap.Nav.Link href="#Home
       ">Home</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="#CV">CV</ReactBootStrap.Nav.Link>
       <ReactBootStrap.Nav.Link href="#Projects">Projects</ReactBootStrap.Nav.Link>
     </ReactBootStrap.Nav>
     </ReactBootStrap.Container>

@@ -1,13 +1,13 @@
 import React from 'react'
-import styles from './someExampleComponent.module.scss'
-import banner from '../video/bannerr.gif'
+import styles from './about.module.scss'
+import aboutme from '../../video/aboutme.gif'
 import * as ReactBootStrap from "react-bootstrap"
-import {Link} from "react-router-dom";
-type SomeExampleComponentProps = {
+
+type AboutProps = {
 
 }
 
-const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
+const About: React.FC<AboutProps> = () => {
   return (
     
     <div className={styles.container}>
@@ -19,17 +19,16 @@ const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
     <ReactBootStrap.Nav className="me-auto">
       <ReactBootStrap.Nav.Link href="#Home
       ">Home</ReactBootStrap.Nav.Link>
-      <ReactBootStrap.Nav.Link href="#CV">CV</ReactBootStrap.Nav.Link>
+      <ReactBootStrap.Nav.Link href="#Projects">Projects</ReactBootStrap.Nav.Link>
     </ReactBootStrap.Nav>
     </ReactBootStrap.Container>
   </ReactBootStrap.Navbar>
   </div>
 </>
 <div className={styles.picBanner}>
-<img className="pic" src={banner} alt='Banner for web dev'/>
-
+<img className="pic" src={aboutme} alt='about for about me'/>
 </div>
-<Link to="/Dashboard"><p>Explore</p></Link>
+
 
 <div 
 >
@@ -46,4 +45,4 @@ Here you will find my CV and some of my projects.</h3>
   )
 }
 
-export default SomeExampleComponent
+export default About

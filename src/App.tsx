@@ -1,15 +1,13 @@
 import React from 'react'
-import MainPage from './components/MainPage';
 import ErrorPage from './components/ErrorPage';
-import SomeExampleComponent from './components/example/someExampleComponent';
+import MainPage from './components/example/mainPage';
 import styles from './App.module.scss'
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
-} from 'react-router-dom';
+  Route} from 'react-router-dom';
+import About from './components/example/AboutMe/about';
 
 const App: React.FC = () => {
 
@@ -25,14 +23,14 @@ const App: React.FC = () => {
    {/* The navigation bar and other components you want to display on all pages come here */}
    <div className={styles.navbar}>
 
-     <Link to='main'>JOIN</Link>
    </div>
 
    <Switch>
      {/* Changing content comes here */}
      <Route exact path='/' component={MainPage} />
-     <Route exact path='/main' component={SomeExampleComponent}/>
+     <Route exact path='/aboutme' component={About} />
      <Route component={ErrorPage} />
+
 
 
    </Switch>
