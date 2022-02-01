@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './mainpage.module.scss'
 import banner from '../video/bannerr.gif'
-import zz from '../video/ZZ.gif'
 import * as ReactBootStrap from "react-bootstrap"
 import {Link} from "react-router-dom";
 type MainPageProps = {
@@ -15,8 +14,6 @@ const MainPage: React.FC<MainPageProps> = () => {
       <div className={styles.nav}>
         <ReactBootStrap.Navbar variant="light">
           <ReactBootStrap.Container>
-            <Link to="/sd"> 
-            <div className={styles.logo} ><img src={zz} alt='logo'/> </div></Link>
             <ReactBootStrap.Nav>
             <ReactBootStrap.Nav.Link href="#Home">Home</ReactBootStrap.Nav.Link>
             <ReactBootStrap.Nav.Link href="#CV">CV</ReactBootStrap.Nav.Link>

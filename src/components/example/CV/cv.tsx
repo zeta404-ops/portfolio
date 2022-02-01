@@ -33,10 +33,7 @@ const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
 
 <div 
 >
-<h3 className="zeta" >Hello! Welcome to my portfolio profile.<br></br>
-I am Zhinar Masood.<br></br>
-I study information and communication technology and I'm excited about programming and cyber security.<br></br>
-Here you will find my CV and some of my projects.</h3>
+<h3 className="zeta" >EDUCATION</h3>
 
 </div>
 

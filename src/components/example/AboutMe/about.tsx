@@ -30,14 +30,11 @@ const About: React.FC<AboutProps> = () => {
 </div>
 
 
-<div 
->
-<h3 className="zeta" >Hello! Welcome to my portfolio profile.<br></br>
-I am Zhinar Masood.<br></br>
-I study information and communication technology and I'm excited about programming and cyber security.<br></br>
-Here you will find my CV and some of my projects.</h3>
-
-</div>
+ <div >
+  <h3 className={styles.zeta}>ABOUT ME<br></br>I’m currently learning: SQL - NodeSql - Csharp - Unity - React - Java<br></br>I’m looking to collaborate on Making a Gameproject<br></br>
+  You can ask me about ... Technology, CyberSecurity, Hardware, Software.
+  </h3>
+ </div>
 
 
   </div>
