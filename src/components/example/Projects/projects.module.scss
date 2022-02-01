@@ -19,7 +19,7 @@ body {background-color: #DDDDDD;}
   font-size: 25px;
 }
   
-H3 
+.zeta
 {
 
     font-family: Trebuchet MS, sans-serif;
@@ -37,3 +37,8 @@ H3
    
 }
 
+.Gitrepos{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 2em;
+}
