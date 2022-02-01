@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './banner.module.scss'
-import banner from '../video/banner.gif'
 
 type BannerProps = {
     text: string

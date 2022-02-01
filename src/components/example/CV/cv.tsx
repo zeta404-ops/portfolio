@@ -19,7 +19,7 @@ const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
 
 <div 
 >
-<h3 className="zeta" >EDUCATION</h3>
+<h3 className={styles.zeta}>EDUCATION</h3>
 
 </div>
 
