@@ -4,11 +4,13 @@ import MainPage from './components/example/mainPage';
 import styles from './App.module.scss'
 import Project from './components/example/Projects/projects'
 import About from './components/example/AboutMe/about';
+import * as ReactBootStrap from "react-bootstrap"
 
 import {
   BrowserRouter as Router,
   Switch,
   Route} from 'react-router-dom';
+import Banner from './components/banner/banner';
 
 
 const App: React.FC = () => {
@@ -29,11 +31,26 @@ const App: React.FC = () => {
 
    </div>
 
+   <div className={styles.nav}>
+        <ReactBootStrap.Navbar variant="light">
+          <ReactBootStrap.Container>
+            <ReactBootStrap.Nav>
+            <ReactBootStrap.Nav.Link href="">Home</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="#CV">CV</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href="#Projects">Projects</ReactBootStrap.Nav.Link>
+          </ReactBootStrap.Nav>
+          </ReactBootStrap.Container>
+        </ReactBootStrap.Navbar>
+      </div>
+
+
+
    <Switch>
      {/* Changing content comes here */}
      <Route exact path='/' component={MainPage} />
      <Route exact path='/aboutme' component={About} />
      <Route exact path='/projects' component={Project} />
+     <Route exact path='/banner' component={Banner} />
      <Route component={ErrorPage} />
 
 

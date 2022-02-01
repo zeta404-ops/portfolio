@@ -1,8 +1,14 @@
 body {
     margin: 0%;
 }
-
-.navbar {
+.nav{
+    font-weight: 700;
+    font-size: 25px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
+    justify-content: center;
+    align-items: center;
+  
+  }
+    

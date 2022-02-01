@@ -18,17 +18,21 @@ body {background-color: #9b4a4a;}
 }
   
 .zeta{
+  margin: 15 0px;
   font-family: Trebuchet MS, sans-serif;
   font-weight: 700;
   font-size: 25px;
   color: #100F0E;
-  position:absolute; left: 342px; top:750px;
+  // position:absolute; left: 342px; top:750px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-items: center;
+  margin: 17px 0;
 }
 
-.picBanner{
- width: 100%;
-}
 
 .explore {
   font-family: Trebuchet MS, sans-serif;
@@ -37,5 +41,5 @@ body {background-color: #9b4a4a;}
   color: rgb(206, 255, 255);
   background: #D41141;
   padding: 8px;
-  position:absolute; left: 900px; top:580px;
+  position:absolute; left: 900px; top:490px;
 }

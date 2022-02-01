@@ -13,12 +13,6 @@ body {background-color: #DDDDDD;}
     justify-content: center;
     align-items: center;
   
-    
-.nav{
-  font-weight: 700;
-  font-size: 25px;
-}
-  
 .zeta
 {
 
@@ -41,4 +35,5 @@ body {background-color: #DDDDDD;}
     display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px 2em;
+  flex-direction: row;
 }
