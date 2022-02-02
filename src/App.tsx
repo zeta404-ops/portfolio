@@ -1,6 +1,7 @@
 import React from 'react'
 import ErrorPage from './components/ErrorPage';
 import MainPage from './components/example/mainPage';
+import cv from './components/example/CV/cv'
 import styles from './App.module.scss'
 import Project from './components/example/Projects/projects'
 import About from './components/example/AboutMe/about';
@@ -35,9 +36,9 @@ const App: React.FC = () => {
         <ReactBootStrap.Navbar variant="light">
           <ReactBootStrap.Container>
             <ReactBootStrap.Nav>
-            <ReactBootStrap.Nav.Link href="">Home</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="#CV">CV</ReactBootStrap.Nav.Link>
-            <ReactBootStrap.Nav.Link href="#Projects">Projects</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href='/'>Home</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href='/cv'>CV</ReactBootStrap.Nav.Link>
+            <ReactBootStrap.Nav.Link href='/projects'>Projects</ReactBootStrap.Nav.Link>
           </ReactBootStrap.Nav>
           </ReactBootStrap.Container>
         </ReactBootStrap.Navbar>
@@ -51,6 +52,7 @@ const App: React.FC = () => {
      <Route exact path='/aboutme' component={About} />
      <Route exact path='/projects' component={Project} />
      <Route exact path='/banner' component={Banner} />
+     <Route exact path='/cv' component={cv} />
      <Route component={ErrorPage} />
 
 

@@ -1,32 +1,26 @@
 import React from 'react'
-import styles from './someExampleComponent.module.scss'
-import banner from '../../video/banner.gif'
-import {Link} from "react-router-dom";
-type SomeExampleComponentProps = {
+import Banner from '../../banner/banner'
+import styles from './cv.module.scss'
+type CvProps = {
 
 }
 
-const SomeExampleComponent: React.FC<SomeExampleComponentProps> = () => {
+const Cv: React.FC<CvProps> = () => {
   return (
     
     <div className={styles.container}>
 
-<div className={styles.picBanner}>
-<img className="pic" src={banner} alt='Banner for web dev'/>
+  <div className={styles.picBanner}>
+  <Banner text='CV' text2='Insightful IT manager with history of beating deadlines.'  className={styles.pic}/> 
 
-</div>
-<Link to="/Dashboard"><p>Explore</p></Link>
+  </div>
 
-<div 
->
-<h3 className={styles.zeta}>EDUCATION</h3>
-
-</div>
-
-
+    <div>
+     <h3 className={styles.zeta}>EDUCATION</h3>
+    </div>
   </div>
 
   )
 }
 
-export default SomeExampleComponent
+export default Cv

@@ -22,15 +22,8 @@ const MainPage: React.FC<MainPageProps> = () => {
       {/* links for about me page*/}
 
      </div>
-     <Link to="/aboutme"><p className={styles.explore}>Explore</p></Link>
+     <Link to="/aboutme"><p className={styles.explore}>About Me</p></Link>
 
-      <div className={styles.zeta}>
-      <h3>Hello! Welcome to my portfolio profile.<br></br>
-        I am Zhinar Masood.<br></br>
-        I study information and communication technology and I'm excited about programming and cyber security.<br></br>
-        Here you will find my CV and some of my projects.
-      </h3>
-      </div>
   </div>
 )}
 
