@@ -27,14 +27,41 @@ body {background-color: #313131;}
 
 .GitRepos{
     max-height: 100px;
-    margin: 200px;
+    margin: 125px;
     display: flex;
     flex-direction: row;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px 2em;
     justify-content: space-around;
     flex-flow: wrap;
+    cursor: pointer;
   }  
+
+  .unityGamesT1{
+    max-height: 100px;
+    margin: 125px;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 2em;
+    justify-content: space-around;
+    flex-flow: wrap;
+    cursor: pointer;
+  }
+
+.unityGamesT2{
+  max-height: 100px;
+  margin: 915px;
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 2em;
+  justify-content: space-around;
+  flex-flow: wrap;
+  cursor: pointer;
+}
+
+
 
   @media screen and (max-width: 1200px){
     .GitRepos{

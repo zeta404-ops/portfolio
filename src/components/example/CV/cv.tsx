@@ -18,6 +18,9 @@ const Cv: React.FC<CvProps> = () => {
     <div>
      <h3 className={styles.zeta}>EDUCATION</h3>
     </div>
+
+    
+
   </div>
 
   )
