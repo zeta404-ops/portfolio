@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;  
 }
 
 .textcss{
@@ -21,7 +22,6 @@
     top: 27%;
     left: 30%;
     text-align: center;
-    
 }
 .textcss2{
     font-family: Trebuchet MS, sans-serif;
@@ -31,5 +31,22 @@
     position: absolute;
     top: 35%;
     left: 30%;
-
+    text-align: center;
 }
+
+@media screen and (max-width: 777px){
+
+    .textcss{
+        left: 43%;
+        top: 15%;
+    }
+    .textcss2{
+        top: 25%;
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 600px){  
+    .GitRepos{
+      width: 40%;
+    }
+  }
