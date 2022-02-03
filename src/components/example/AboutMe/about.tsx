@@ -28,10 +28,12 @@ const About: React.FC<AboutProps> = () => {
 
   
         <div className={styles.zeta}>
-         <h3>ABOUT ME<br></br><br></br>I'm currently learning: SQL - NodeSql - C# - Unity - React - Java<br></br>I'm looking to collaborate on Making a Gameproject<br></br>
+         <h3>ABOUT ME<br></br><br></br>I'm currently learning: SQL - Node Sql - Csharp - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript.<br></br>I'm looking to collaborate on Making a Gameproject<br></br>
          You can ask me about ... Technology, CyberSecurity, Hardware, Software.<br></br>
          </h3>
         </div>
+
+        <h3> yhteystiedot</h3>
         
  </div>
 

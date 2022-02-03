@@ -16,7 +16,7 @@ const Cv: React.FC<CvProps> = () => {
   </div>
 
     <div>
-     <h3 className={styles.zeta}>EDUCATION</h3>
+     
     </div>
 
       <h3 className={styles.zeta}>Click at the icons to visit official badge issuer site</h3>
@@ -26,8 +26,17 @@ const Cv: React.FC<CvProps> = () => {
       <a className={styles.badge2} href="https://www.credly.com/badges/836d77f9-b428-441a-8d92-13fa8b5a0f26/public_url"><img src="https://i.ibb.co/RpSSWGZ/introduction-to-cybersecurity.png" alt='cyber intro badge'/></a>
       <a className={styles.badge3} href="https://www.credly.com/badges/2e122d42-14f5-4b9e-bd49-fd79990c1841/public_url"><img src="https://i.ibb.co/TtdJZSx/introduction-to-iot.png" alt='intro IOT badge'/></a>
       <a className={styles.badge4} href="https://www.credly.com/badges/ab6bb0c7-b6b7-4e58-842f-7cd877545085/public_url"><img src="https://i.ibb.co/nwfPT5x/pkttracer.png" alt='PACKET TRACER badge'/></a>
-
     </div>
+    <h3 className={styles.zeta}>EDUCATION</h3>
+    <h3>Currently studying Bachelor of Science in Information and Communication Technology, Varia
+       </h3>
+
+       <h3 className={styles.internship}>Vesala Primary School, Ruudi Secondary School, internship</h3>
+       <h3 className={styles.graph}>I followed the lessons given by an ordinary teacher to create a cohesive and consistent learning experience for students
+          <br></br>I supervised students inside and outside the classroom, on the playground and in the canteen
+          <br></br>I gave the class assignments based on the lesson plan available
+       </h3>
+
   </div>
 
   )
