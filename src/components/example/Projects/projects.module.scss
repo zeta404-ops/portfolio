@@ -20,42 +20,45 @@ body {background-color: #313131;}
     color: rgb(206, 255, 255);
     background: #D41141;
     padding: 8px;
-    margin: 60px;
+    margin: 80px;
     text-align: center;
 
   }
+  
 
 .GitRepos{
     max-height: 100px;
-    margin: 125px;
+    margin: 85px;
     display: flex;
     flex-direction: row;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 2em;
+    gap: 10px 155em;
     justify-content: space-around;
     flex-flow: wrap;
     cursor: pointer;
+    margin-bottom: 135px;
   }  
 
   .unityGamesT1{
     max-height: 100px;
-    margin: 125px;
+    margin: 300x;
     display: flex;
     flex-direction: row;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 2em;
+    gap: 10px 65em;
     justify-content: space-around;
     flex-flow: wrap;
     cursor: pointer;
+    margin-bottom: 365px;
   }
 
 .unityGamesT2{
   max-height: 100px;
-  margin: 915px;
+  margin: 1040px;
   display: flex;
   flex-direction: row;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px 2em;
+  gap: 10px 5em;
   justify-content: space-around;
   flex-flow: wrap;
   cursor: pointer;
@@ -65,12 +68,14 @@ body {background-color: #313131;}
 
   @media screen and (max-width: 1200px){
     .GitRepos{
-      width: 40%;
+      margin-top: 5px;
     }
-  }
-  @media screen and (max-width: 600px){  
-    .GitRepos{
-      width: 40%;
+
+    .unityGamesT1{
+      margin: 50px;
+    }
+    .unityGamesT2 {
+      margin: 1370px;
     }
   }
 }

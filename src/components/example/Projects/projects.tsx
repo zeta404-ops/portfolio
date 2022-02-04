@@ -22,6 +22,11 @@ const Project: React.FC<ProjectProps> = () => {
       <a className={styles.repo2} href="https://github.com/varia-ict/varia-agile-20C-ryhma-3"><img src="https://gh-card.dev/repos/varia-ict/varia-agile-20C-ryhma-3.svg?fullname=" alt='ictvaria'/></a>
       <a className={styles.repo3} href="https://github.com/zeta404-ops/portfolio"><img src="https://gh-card.dev/repos/zeta404-ops/portfolio.svg?fullname=" alt='portfolio' /></a>
    </div>
+   <br></br>
+   <br></br>
+   <br></br>
+   <br></br>
+   <br></br>
    <h3 className={styles.zeta} >HERE YOU WILL SEE SOME OF MY UNITY PROJECTS</h3>
   </div>
 
@@ -33,9 +38,13 @@ const Project: React.FC<ProjectProps> = () => {
     </div>
     <br></br>
     <div className={styles.unityGamesT2}> 
+
     <a className={styles.unity4} href="https://play.unity.com/mg/other/webgl-builds-88726"><img src="https://i.ibb.co/7V9MC79/zeta.png" alt='WEBGL ZETA'/></a>
+    <br></br>
     <a className={styles.unity5} href="https://play.unity.com/mg/other/mod-the-cube-1642"><img src="https://i.ibb.co/M5xnmQW/mdc.png" alt='MOD THE CUBE'/></a>
+    <br></br>
     <a className={styles.unity6} href="https://play.unity.com/mg/lego/paistettu-peruna"><img src="https://i.ibb.co/1XcZXm8/pp.png" alt='PAISTETTU PERUNA'/></a>
+    <br></br>
     <a className={styles.unity7} href="https://play.unity.com/mg/other/prototype-3-110"><img src="https://i.ibb.co/Y3w6rJS/PROTOTYPE3.png" alt='PROTOTYPE3'/></a>
     </div>
 

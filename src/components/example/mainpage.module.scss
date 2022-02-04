@@ -41,5 +41,17 @@ body {background-color: #313131;}
   color: rgb(206, 255, 255);
   background: #D41141;
   padding: 8px;
-  position:absolute; left: 900px; top:490px;
+  position:absolute; left: 900px; top:420px;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 1000px){
+
+  .explore{
+    left: 37%;
+    top: 55%;
+  }
 }
