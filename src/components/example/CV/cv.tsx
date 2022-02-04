@@ -28,8 +28,18 @@ const Cv: React.FC<CvProps> = () => {
       <a className={styles.badge4} href="https://www.credly.com/badges/ab6bb0c7-b6b7-4e58-842f-7cd877545085/public_url"><img src="https://i.ibb.co/nwfPT5x/pkttracer.png" alt='PACKET TRACER badge'/></a>
     </div>
     <h3 className={styles.zeta}>EDUCATION</h3>
-    <h3 className={styles.graph} >Currently studying Bachelor of Science in Information and Communication Technology, Varia
-       </h3>
+    <h3 className={styles.graph} >Currently studying Bachelor of Degree in Information and Communication Technology, Varia</h3>
+
+    <h3 className={styles.zeta}>SKILLS</h3>
+    <h3 className={styles.graph}>Proficiency with programming languages such as.</h3>
+    <h3 className={styles.graph}>SQL - Node Sql - Csharp - Unity - React - Java - HTML - CSS - TypeScript - JavaScript - ReactJs</h3>
+    <h3 className={styles.graph}>Learning concepts and applying them to other problems.</h3>
+    <h3 className={styles.graph}>Mathematical skills.</h3>
+    <h3 className={styles.graph}>Problem-solving capability.</h3>
+    <h3 className={styles.graph}>Communication skills.</h3>
+    <h3 className={styles.graph}>Writing skills.</h3>
+    <h3 className={styles.graph}>Inquisitiveness.</h3>
+    <h3 className={styles.graph}>Self-motivation.</h3>
 
        <h3 className={styles.internship}>Vesala Primary School, Ruudi Secondary School, internship</h3>
        <h3 className={styles.graph}>I followed the lessons given by an ordinary teacher to create a cohesive and consistent learning experience for students

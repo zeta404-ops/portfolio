@@ -14,19 +14,43 @@ body {background-color: #313131;}
     align-items: center;
   
 .zeta{
-  margin: 15 0px;
   font-family: Trebuchet MS, sans-serif;
   font-weight: 700;
   font-size: 25px;
-  color: #100F0E;
-  // position:absolute; left: 342px; top:750px;
+  padding: 8px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  justify-items: center;
-  margin: 17px 0;
+}
 
+.redtitle{
+  font-family: Trebuchet MS, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(206, 255, 255);
+  background: #D41141;
+  padding: 8px;
+  margin: 40px;
+  text-align: center;
+}
+
+.socials{
+
+  max-height: 100px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  cursor: pointer;
+  text-align: center;
+  
+}
+.img1{
+  width: 20%;
+  height: 20%;  
+}
+.img2{
+  width: 33%;
+  height: 33%;  
 }
 }
