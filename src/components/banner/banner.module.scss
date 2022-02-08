@@ -23,6 +23,7 @@
     left: 30%;
     text-align: center;
     user-select: none;
+    animation: blinker 7s linear infinite;
 }
 .textcss2{
     font-family: Trebuchet MS, sans-serif;
@@ -34,6 +35,13 @@
     left: 30%;
     text-align: center;
     user-select: none;
+    animation: blinker 4s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 900px){
@@ -54,3 +62,6 @@
       width: 40%;
     }
   }
+
+
+  
