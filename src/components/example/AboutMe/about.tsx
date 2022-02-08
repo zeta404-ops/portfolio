@@ -13,7 +13,7 @@ const About: React.FC<AboutProps> = () => {
     
   <div className={styles.container}>
   <div className={styles.picBanner}>
-  <Banner text='ABOUT ME' text2='if it were easy everybody would do it.' className={styles.pic}/> 
+  <Banner text='⭐ABOUT ME⭐' text2='if it were easy everybody would do it.' className={styles.pic}/> 
   </div>
 
 
