@@ -22,6 +22,7 @@
     top: 27%;
     left: 30%;
     text-align: center;
+    user-select: none;
 }
 .textcss2{
     font-family: Trebuchet MS, sans-serif;
@@ -32,17 +33,20 @@
     top: 35%;
     left: 30%;
     text-align: center;
+    user-select: none;
 }
 
 @media screen and (max-width: 900px){
 
     .textcss{
-        left: 43%;
+        left: 25%;
         top: 15%;
+        font-size: 35px;
     }
     .textcss2{
         top: 25%;
       width: 40%;
+      font-size: 30px;
     }
   }
   @media screen and (max-width: 600px){  

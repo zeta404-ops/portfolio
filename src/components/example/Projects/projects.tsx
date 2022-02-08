@@ -11,7 +11,7 @@ const Project: React.FC<ProjectProps> = () => {
     
   <div className={styles.container}>
   <div className={styles.picBanner}>
-    <Banner text='PROJECTS' text2='Your project, our project.'  className={styles.pic}/> 
+    <Banner text='MY PROJECTS📁' text2='Your project, our project.'  className={styles.pic}/> 
   </div>
 
 

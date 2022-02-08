@@ -11,7 +11,7 @@ const Cv: React.FC<CvProps> = () => {
     <div className={styles.container}>
 
   <div className={styles.picBanner}>
-  <Banner text='CV' text2='Insightful IT manager with history of beating deadlines.'  className={styles.pic}/> 
+  <Banner text='Curriculum Vitae' text2='Insightful IT manager with history of beating deadlines.'  className={styles.pic}/> 
 
   </div>
 
@@ -29,6 +29,7 @@ const Cv: React.FC<CvProps> = () => {
     </div>
     <h3 className={styles.zeta}>EDUCATION</h3>
     <h3 className={styles.graph} >Currently studying Bachelor of Degree in Information and Communication Technology, Varia</h3>
+    <h3 className={styles.graph} >12.08.2020 - 03.06.2023</h3>
 
     <h3 className={styles.zeta}>SKILLS</h3>
     <h3 className={styles.graph}>Proficiency with programming languages such as.</h3>
@@ -42,6 +43,7 @@ const Cv: React.FC<CvProps> = () => {
     <h3 className={styles.graph}>Self-motivation.</h3>
 
        <h3 className={styles.internship}>Vesala Primary School, Ruudi Secondary School, internship</h3>
+       <h3 className={styles.graph} >12.08.2019 - 05.10.2019</h3>
        <h3 className={styles.graph}>I followed the lessons given by an ordinary teacher to create a cohesive and consistent learning experience for students
           <br></br>I supervised students inside and outside the classroom, on the playground and in the canteen
           <br></br>I gave the class assignments based on the lesson plan available
