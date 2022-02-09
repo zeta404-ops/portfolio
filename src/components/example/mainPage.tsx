@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './mainpage.module.scss'
-import {Link} from "react-router-dom";
 import Banner from '../banner/banner';
 import {CgInstagram} from 'react-icons/cg'
 import {AiOutlineLinkedin} from 'react-icons/ai'
@@ -46,12 +45,12 @@ const MainPage: React.FC<MainPageProps> = () => {
         <div className={styles.socials}>
 
          <div> 
-           <a href="https://www.instagram.com/zhinar_0/" target="_blank">
+           <a href="https://www.instagram.com/zhinar_0/" target="_blank" rel="noreferrer" >
              <CgInstagram size={55} color="#D41141"/> 
            </a>
          </div>
          <div> 
-           <a href="https://www.linkedin.com/in/zhinar/" target="_blank">
+           <a href="https://www.linkedin.com/in/zhinar/" target="_blank" rel="noreferrer" >
              <AiOutlineLinkedin size={63} color="#D41141"/> 
            </a>
          </div>
