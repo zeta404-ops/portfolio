@@ -32,7 +32,19 @@ body {background-color: #313131;}
   justify-items: center;
   margin: 17px 0;
 }
+.socials{
 
+  max-height: 100px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  cursor: pointer;
+  text-align: center;
+  
+}
 
 .explore {
   font-family: Trebuchet MS, sans-serif;
@@ -41,10 +53,8 @@ body {background-color: #313131;}
   color: rgb(206, 255, 255);
   background: #D41141;
   padding: 8px;
-  position:absolute; left: 900px; top:420px;
-  justify-items: center;
-  display: flex;
-  flex-direction: column;
+  margin: 40px;
+  text-align: center;
 }
 
 

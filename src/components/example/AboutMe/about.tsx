@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './about.module.scss'
 import Banner from '../../banner/banner'
-import ig from '../../banner/ig.png'
-import linkedin from '../../banner/in.png'
+import {CgInstagram} from 'react-icons/cg'
+import {AiOutlineLinkedin} from 'react-icons/ai'
 
 type AboutProps = {
 
@@ -39,9 +39,17 @@ const About: React.FC<AboutProps> = () => {
         <h3 className={styles.redtitle}>CONTACT ME</h3>
 
         <div className={styles.socials}>
-         <a className={styles.socials1} href="https://www.instagram.com/zhinar_0/"><img className={styles.img1} src={ig} alt='IG LOGO'/></a>
 
-         <a className={styles.socials2} href="https://www.linkedin.com/in/zhinar/"><img className={styles.img2} src={linkedin} alt='LINKEDIN LOGO'/></a>
+         <div> 
+           <a href="https://www.instagram.com/zhinar_0/" target="_blank">
+             <CgInstagram size={55} color="#D41141"/> 
+           </a>
+         </div>
+         <div> 
+           <a href="https://www.linkedin.com/in/zhinar/" target="_blank">
+             <AiOutlineLinkedin size={63} color="#D41141"/> 
+           </a>
+         </div>
          </div>
         </div>
 
