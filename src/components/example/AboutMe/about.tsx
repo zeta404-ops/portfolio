@@ -41,12 +41,12 @@ const About: React.FC<AboutProps> = () => {
         <div className={styles.socials}>
 
          <div> 
-           <a href="https://www.instagram.com/zhinar_0/" target="_blank">
+           <a href="https://www.instagram.com/zhinar_0/" target="_blank" rel="noreferrer">
              <CgInstagram size={55} color="#D41141"/> 
            </a>
          </div>
          <div> 
-           <a href="https://www.linkedin.com/in/zhinar/" target="_blank">
+           <a href="https://www.linkedin.com/in/zhinar/" target="_blank" rel="noreferrer">
              <AiOutlineLinkedin size={63} color="#D41141"/> 
            </a>
          </div>
