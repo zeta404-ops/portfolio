@@ -40,6 +40,29 @@ const MainPage: React.FC<MainPageProps> = () => {
          </h3>
         </div>
 
+        <h3 className={styles.explore}>Setup and Equipment</h3>
+        <div className={styles.zeta}>
+          <h3 className={styles.zeta}>PC SPECS<br></br>
+              Processor: Intel Core i7-8700K 3.7 GHz (up to 4.7 GHz)<br></br>
+              Operating System: Windows 10 64-bit<br></br>
+              Central memory: 32GB DDR4<br></br>
+              Graphics Card: NVIDIA GeForce GTX 1080 8GB<br></br>
+              Hard drive: 256GB m.2 SSD + 1TB HDD<br></br>
+              Memory card slot: SD card reader<br></br>
+              Optical drive: SuperMulti DVD RW<br></br>
+              </h3>
+
+              <h3 className={styles.explore}>IDE</h3>
+              <h3 className={styles.zeta}>VISUAL STUDIO CODE<br></br>
+              Visual Studio 2019<br></br>
+              IntteliJ IDEA Community Edition<br></br>
+              
+              </h3>
+        </div>
+
+        
+        {/* <Link to="/contact"><p className={styles.explore}>CONTACT ME</p></Link> */}
+
         <h3 className={styles.explore}>CONTACT ME</h3>
 
         <div className={styles.socials}>

@@ -1,0 +1,90 @@
+.container {
+    width: 45px;
+    height: 30px;
+}
+.container:focus {
+    border-color: #8464ca;
+    box-shadow: 0 0 8px #beace3;
+}
+
+
+.sendbutton{
+    min-width: 100px;
+    background: #D41141;
+    border: none;
+    color: white;
+    align-items: center;
+    font-weight: 700;
+    
+}
+
+.sendbutton:hover{
+    background: #ff8e8e;
+}
+.sendbuttonDiv{
+    align-items: center;
+    text-align: center;
+}
+.modaltitle{
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #D41141;
+    text-align: center;
+    user-select: none;
+}
+
+.textinput{
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    row-gap: 2em;
+    color: black;
+    text-align: center;
+    user-select: none;
+    margin-bottom: 30px;
+}
+
+.modalemail{
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    row-gap: 2em;
+    color: black;
+    text-align: center;
+    user-select: none;
+    margin-bottom: 30px;
+}
+
+.modalmessage{
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    row-gap: 2em;
+    color: black;
+    text-align: center;
+    user-select: none;
+    margin-bottom: 30px;
+}
+
+
+.textinputlabel{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3px;
+}
+
+.modalemaillabel{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3px;
+}
+
+.modalmessagelabel{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3px;
+}

@@ -32,6 +32,13 @@ const Cv: React.FC<CvProps> = () => {
     <h3 className={styles.graph} >12.08.2020 - 03.06.2023</h3>
 
     <h3 className={styles.zeta}>SKILLS</h3>
+    <h3 className={styles.graph}>
+        Agile software development<br></br>
+        Participating on small scrum teams<br></br>
+        Writing user stories<br></br>
+        Working with clients to develop product backlogs<br></br>
+        Project management experience
+    </h3>
     <h3 className={styles.graph}>Proficiency with programming languages such as.</h3>
     <h3 className={styles.graph}>SQL - Node Sql - Csharp - Unity - React - Java - HTML - CSS - TypeScript - JavaScript - ReactJs</h3>
     <h3 className={styles.graph}>Learning concepts and applying them to other problems.</h3>
