@@ -1,21 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Popup from 'reactjs-popup';
 import styles from './contact.module.scss'
 
 type ContactProps = {
-    modalIsOpen: boolean;
     setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+    openState: boolean
 }
 
-const Contact: React.FC<ContactProps> = ({modalIsOpen, setModalIsOpen }) => {
+const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
     const [name, setName] = useState("")
     const [message, setMessage] = useState("")
     const [email, setEmail] = useState("")
 
    const handleForm = () => {
        if (!name) return alert("name is missing");
-
-
        alert(`
        name: ${name}
        email: ${email}
@@ -23,10 +21,16 @@ const Contact: React.FC<ContactProps> = ({modalIsOpen, setModalIsOpen }) => {
        `)
    }
 
+   useEffect(() => console.log("modal:", openState), [openState])
+
   return (
-    <Popup open={modalIsOpen} className={styles.container} position="center center">
+
+    
+    // <div className={styles.container}>
+    <Popup open={openState} className={styles.container} onClose={() => {setModalIsOpen(false)}} position="center center">
         
-        <div> <h4 className={styles.modaltitle}>Contact Us</h4></div>
+        <div className={styles.modaltitle}> <h4 >Contact Us</h4></div>
+
 
         <div className={styles.textinput}> 
         <label  className={styles.textinputlabel}>Name</label> 
@@ -67,6 +71,8 @@ const Contact: React.FC<ContactProps> = ({modalIsOpen, setModalIsOpen }) => {
              <input className={styles.sendbutton} type="button" value="Send" onClick={() => handleForm()} />
          </div>
     </Popup>
+    // {/* </div> */}
+    
   )
 }
 

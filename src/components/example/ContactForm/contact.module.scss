@@ -1,10 +1,11 @@
 .container {
     width: 45px;
     height: 30px;
+    
 }
 .container:focus {
     border-color: #8464ca;
-    box-shadow: 0 0 8px #beace3;
+    box-shadow: 0 0 12px #beace3;
 }
 
 

@@ -3,11 +3,15 @@ import styles from './mainpage.module.scss'
 import Banner from '../banner/banner';
 import {CgInstagram} from 'react-icons/cg'
 import {AiOutlineLinkedin} from 'react-icons/ai'
-type MainPageProps = {
+import Contact from './ContactForm/contact';
 
+type MainPageProps = {
+  contactFormState: boolean;
+  setContactformState: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const MainPage: React.FC<MainPageProps> = () => {
+const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformState }) => {
+
   return (
     <div className={styles.container}>
 
@@ -25,13 +29,14 @@ const MainPage: React.FC<MainPageProps> = () => {
      </div>
      {/* <Link to="/aboutme"><p className={styles.explore}>About Me</p></Link> */}
      <div className={styles.zeta}>
+     <img className={styles.zetaimg} src="https://i.ibb.co/nRjFWrg/zetaa.jpg" alt='zeta'/>
        <h3 className={styles.zeta}>Hello! Welcome to my portfolio profile.<br></br>
         I am Zhinar Masood.<br></br>
         I study information and communication technology and I'm excited about programming and cyber security.
        </h3>
       </div>
 
-      <h3 className={styles.explore}>ABOUT ME</h3>
+      <h3 className={styles.explore}>😃ABOUT ME😃</h3>
 
         <div className={styles.zeta}>
          <h3 className={styles.zeta}>I'm currently learning: SQL - Node Sql - Csharp - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript.
@@ -40,7 +45,7 @@ const MainPage: React.FC<MainPageProps> = () => {
          </h3>
         </div>
 
-        <h3 className={styles.explore}>Setup and Equipment</h3>
+        <h3 className={styles.explore}>💻Setup and Equipment💻</h3>
         <div className={styles.zeta}>
           <h3 className={styles.zeta}>PC SPECS<br></br>
               Processor: Intel Core i7-8700K 3.7 GHz (up to 4.7 GHz)<br></br>
@@ -52,7 +57,7 @@ const MainPage: React.FC<MainPageProps> = () => {
               Optical drive: SuperMulti DVD RW<br></br>
               </h3>
 
-              <h3 className={styles.explore}>IDE</h3>
+              <h3 className={styles.explore}>🔸IDE🔸</h3>
               <h3 className={styles.zeta}>VISUAL STUDIO CODE<br></br>
               Visual Studio 2019<br></br>
               IntteliJ IDEA Community Edition<br></br>
@@ -60,10 +65,18 @@ const MainPage: React.FC<MainPageProps> = () => {
               </h3>
         </div>
 
-        
+        { 
+          contactFormState
+           ? <Contact openState={contactFormState} setModalIsOpen={setContactformState}/> 
+           : null
+        }
         {/* <Link to="/contact"><p className={styles.explore}>CONTACT ME</p></Link> */}
+        {/* <Contact modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/> */}
+        {/* <Link to={'contact'} className={styles.explore}>hh</Link> */}
 
-        <h3 className={styles.explore}>CONTACT ME</h3>
+        <button  className={styles.explore} onClick={() => setContactformState(true)}>
+        😎Contact Us😎
+        </button>
 
         <div className={styles.socials}>
 

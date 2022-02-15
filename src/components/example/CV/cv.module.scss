@@ -1,6 +1,4 @@
 
-body {background-color: #313131;}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -12,6 +10,7 @@ body {background-color: #313131;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #ccc;
 .zeta
 {
   font-family: Trebuchet MS, sans-serif;
@@ -22,6 +21,8 @@ body {background-color: #313131;}
   padding: 8px;
   margin: 40px;
   text-align: center;
+  border-color: #D41141;
+  box-shadow: 0 0 11px #D41141;
   }
 
   .credly{
@@ -57,6 +58,8 @@ body {background-color: #313131;}
   padding: 8px;
   margin: 40px;
   text-align: center;
+  border-color: #D41141;
+  box-shadow: 0 0 11px #D41141;
   }
 
 .graph{

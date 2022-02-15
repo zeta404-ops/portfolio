@@ -1,6 +1,4 @@
 
-body {background-color: #313131;}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -12,13 +10,14 @@ body {background-color: #313131;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+    background: #ccc;
 .zeta{
   font-family: Trebuchet MS, sans-serif;
   font-weight: 700;
   font-size: 25px;
   padding: 8px;
   text-align: center;
+  
 }
 
 .redtitle{
@@ -43,6 +42,7 @@ body {background-color: #313131;}
   flex-flow: wrap;
   cursor: pointer;
   text-align: center;
+  
   
 }
 .img1{

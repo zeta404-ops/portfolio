@@ -15,7 +15,8 @@ import Contact from './components/example/ContactForm/contact';
 
 
 const App: React.FC = () => {
-  const [modalIsOpen, setModalIsOpen]= useState(true)
+
+  const [contactformIsOpen, setContactformIsOpen] = useState<boolean>(false);
 
   return (
 
@@ -27,10 +28,10 @@ const App: React.FC = () => {
       crossOrigin="anonymous"  
     />
 
-    <Contact modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/>
+    
     
     <div className={styles.nav}>
-      <ReactBootStrap.Navbar variant="light">
+      <ReactBootStrap.Navbar>
         <ReactBootStrap.Container>
           <ReactBootStrap.Nav>
           <ReactBootStrap.Nav.Link href='/'>Home</ReactBootStrap.Nav.Link>
@@ -41,14 +42,15 @@ const App: React.FC = () => {
       </ReactBootStrap.Navbar>
     </div>
 
-
+    <Contact setModalIsOpen={setContactformIsOpen} openState={contactformIsOpen}/>
 
    <Switch>
      {/* Changing content comes here */}
-     <Route exact path='/' component={MainPage} />
+     <Route exact path="/" render={() => <MainPage contactFormState={contactformIsOpen} setContactformState={setContactformIsOpen} />} />
+     {/* <Route exact path='/' component={MainPage} /> */}
      <Route exact path='/projects' component={Project} />
      <Route exact path='/banner' component={Banner} />
-     {/* <Route exact path='/contact' component={Contact} /> */}
+     <Route exact path='/contact' component={Contact} />
      <Route exact path='/cv' component={cv} />
      <Route component={ErrorPage} />
    </Switch>

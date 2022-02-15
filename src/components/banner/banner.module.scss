@@ -24,6 +24,8 @@
     text-align: center;
     user-select: none;
     animation: blinker 7s linear infinite;
+    border-color: #D41141;
+    text-shadow: 0 0 4px #D41141;
 }
 .textcss2{
     font-family: Trebuchet MS, sans-serif;
@@ -36,6 +38,8 @@
     text-align: center;
     user-select: none;
     animation: blinker 4s linear infinite;
+    border-color: #D41141;
+    text-shadow: 0 0 2px #D41141;
 }
 
 @keyframes blinker {
