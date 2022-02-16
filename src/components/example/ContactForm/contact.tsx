@@ -14,10 +14,13 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
 
    const handleForm = () => {
        if (!name) return alert("name is missing");
+       if (!email) return alert("email is missing");
+       if (!message) return alert("message is missing");
        alert(`
-       name: ${name}
-       email: ${email}
-       message: ${message}
+       Successfuly submitted form
+       Your name: ${name}
+       Your email: ${email}
+       Your message: ${message}
        `)
    }
 
@@ -49,6 +52,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <label  className={styles.textinputlabel}>Name</label> 
         <br></br>
         <input
+            required 
             type="text"
             value={name}
             placeholder="Zeta"
@@ -62,9 +66,10 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <label className={styles.modalemaillabel}>Email</label> 
         <br></br>
         <input
-            type="text"
+        required 
+            type="email"
             value={email} 
-            placeholder="sophie@example.com"
+            placeholder="example@example.com"
             onChange={ (e) => setEmail(e.target.value) } 
         />
         </div>
@@ -74,6 +79,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <label className={styles.modalmessagelabel}>Message</label> 
         <br></br>
         <textarea 
+            required 
             value={message} 
             placeholder="Your Message here!"
             rows={5} 

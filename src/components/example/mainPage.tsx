@@ -14,7 +14,6 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
   const [buttonActive, setButtonActive] = useState<boolean>(true);
 
   useEffect(() => {
-    if (buttonActive) return;
 
     const timer = setTimeout(() => {
       setButtonActive(true);
