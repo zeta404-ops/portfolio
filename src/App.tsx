@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ErrorPage from './components/ErrorPage';
+import ErrorPage from '../src/components/extra/ErrorPage';
 import MainPage from './components/example/mainPage';
 import cv from './components/example/CV/cv'
 import styles from './App.module.scss'
@@ -12,6 +12,7 @@ import {
   Route} from 'react-router-dom';
 import Banner from './components/banner/banner';
 import Contact from './components/example/ContactForm/contact';
+import Footer from './components/example/Footer/footer';
 
 
 const App: React.FC = () => {
@@ -31,9 +32,9 @@ const App: React.FC = () => {
     
     
     <div className={styles.nav}>
-      <ReactBootStrap.Navbar>
-        <ReactBootStrap.Container>
-          <ReactBootStrap.Nav>
+      <ReactBootStrap.Navbar >
+        <ReactBootStrap.Container >
+          <ReactBootStrap.Nav > 
           <ReactBootStrap.Nav.Link href='/'>Home</ReactBootStrap.Nav.Link>
           <ReactBootStrap.Nav.Link href='/cv'>CV</ReactBootStrap.Nav.Link>
           <ReactBootStrap.Nav.Link href='/projects'>Projects</ReactBootStrap.Nav.Link>
@@ -43,6 +44,8 @@ const App: React.FC = () => {
     </div>
 
     <Contact setModalIsOpen={setContactformIsOpen} openState={contactformIsOpen}/>
+
+    
 
    <Switch>
      {/* Changing content comes here */}
@@ -56,7 +59,7 @@ const App: React.FC = () => {
    </Switch>
 
    {/* The footer and other components you want to display on all pages come here */}
-
+   <Footer/>
  </Router>
   )
 }

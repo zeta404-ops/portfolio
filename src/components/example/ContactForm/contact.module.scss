@@ -11,16 +11,27 @@
 
 .sendbutton{
     min-width: 100px;
-    background: #D41141;
+    background: #0963ad;
     border: none;
     color: white;
     align-items: center;
     font-weight: 700;
     
 }
-
+.cancelbutton{
+    min-width: 100px;
+    background: #8d8d8d;
+    border: none;
+    color: white;
+    align-items: center;
+    font-weight: 700;
+}
 .sendbutton:hover{
-    background: #ff8e8e;
+    background: #153a8a;
+}
+
+.cancelbutton:hover{
+    background: #1d1d1d;
 }
 .sendbuttonDiv{
     align-items: center;
@@ -30,7 +41,7 @@
     font-family: Trebuchet MS, sans-serif;
     font-weight: 700;
     font-size: 25px;
-    color: #D41141;
+    color: #ee6c4d;
     text-align: center;
     user-select: none;
 }

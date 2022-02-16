@@ -27,7 +27,20 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
 
     
     // <div className={styles.container}>
-    <Popup open={openState} className={styles.container} onClose={() => {setModalIsOpen(false)}} position="center center">
+    <Popup
+        // ref={}
+        open={openState}
+        className={styles.container}
+        closeOnDocumentClick={false}
+        lockScroll
+        modal
+        position="center center"
+        onClose={(e) => {
+            // const mouseE = e as MouseEvent
+            // console.log(mouseE.target)
+            setModalIsOpen(false);
+        }}
+    >
         
         <div className={styles.modaltitle}> <h4 >Contact Us</h4></div>
 
@@ -48,7 +61,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <div className={styles.modalemail}> 
         <label className={styles.modalemaillabel}>Email</label> 
         <br></br>
-     <input
+        <input
             type="text"
             value={email} 
             placeholder="sophie@example.com"
@@ -69,6 +82,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         </div>
          <div className={styles.sendbuttonDiv} > 
              <input className={styles.sendbutton} type="button" value="Send" onClick={() => handleForm()} />
+             <input className={styles.cancelbutton} type="button" value="Cancel" onClick={() => setModalIsOpen(false)} />
          </div>
     </Popup>
     // {/* </div> */}

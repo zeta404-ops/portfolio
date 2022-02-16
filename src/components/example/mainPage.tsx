@@ -1,8 +1,7 @@
-import React from 'react'
+// import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './mainpage.module.scss'
 import Banner from '../banner/banner';
-import {CgInstagram} from 'react-icons/cg'
-import {AiOutlineLinkedin} from 'react-icons/ai'
 import Contact from './ContactForm/contact';
 
 type MainPageProps = {
@@ -11,6 +10,19 @@ type MainPageProps = {
 }
 
 const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformState }) => {
+
+  const [buttonActive, setButtonActive] = useState<boolean>(true);
+
+  useEffect(() => {
+    if (buttonActive) return;
+
+    const timer = setTimeout(() => {
+      setButtonActive(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+
+  },  [contactFormState]);
 
   return (
     <div className={styles.container}>
@@ -74,23 +86,19 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
         {/* <Contact modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/> */}
         {/* <Link to={'contact'} className={styles.explore}>hh</Link> */}
 
-        <button  className={styles.explore} onClick={() => setContactformState(true)}>
+        <button
+          className={styles.explore}
+          disabled={!buttonActive}
+          onClick={(e) => {
+            setContactformState(true);
+            setButtonActive(false);
+            e.preventDefault()
+          }}
+        >
         😎Contact Us😎
         </button>
 
-        <div className={styles.socials}>
 
-         <div> 
-           <a href="https://www.instagram.com/zhinar_0/" target="_blank" rel="noreferrer" >
-             <CgInstagram size={55} color="#D41141"/> 
-           </a>
-         </div>
-         <div> 
-           <a href="https://www.linkedin.com/in/zhinar/" target="_blank" rel="noreferrer" >
-             <AiOutlineLinkedin size={63} color="#D41141"/> 
-           </a>
-         </div>
-         </div>
 
   </div>
 )}
