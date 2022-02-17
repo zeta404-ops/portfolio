@@ -35,7 +35,7 @@ const App: React.FC = () => {
     <div className={styles.nav}>
       <ReactBootStrap.Navbar >
         <ReactBootStrap.Container >
-          <ReactBootStrap.Nav > 
+          <ReactBootStrap.Nav> 
           <ReactBootStrap.Nav.Link href='/'>Home</ReactBootStrap.Nav.Link>
           <ReactBootStrap.Nav.Link href='/cv'>CV</ReactBootStrap.Nav.Link>
           <ReactBootStrap.Nav.Link href='/projects'>Projects</ReactBootStrap.Nav.Link>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
 import styles from './contact.module.scss';
 import FirebaseServices from '../../../firebase/firebaseServices';
-import { doc, setDoc, collection, addDoc} from "firebase/firestore"; 
+import {collection, addDoc} from "firebase/firestore"; 
 
 
 type ContactProps = {
@@ -27,8 +27,8 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
 
        await addDoc(collection(fiebaseInstance, 'ContactForm'), {
            message: {
-               html: `Uusi viesti portfoliosta.  <br><br> Nimi: ${name} <br> Viesti: ${message} <br> Email: ${email} <br> Time: ${new Date()}`,
-               subject: 'UUSI VIESTI PORTFOLIOSTA!'
+               html: `You have recived a new message from Portfolio.  <br><br> Name: ${name} <br><br>  Email: ${email} <br><br> Message: ${message}  <br><br> Time: ${new Date()}`,
+               subject: 'NEW MESSAGE FROM PORTFOLIO!'
            },
            name: name,
            email: email,
@@ -37,11 +37,11 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
            date: new Date().getTime(),
        })
        .then(() => {
+           
            setEmail("")
            setName("")
            setMessage("")
            setSendReady(true)
-
        })
        .catch((err) => console.log(err.message));
 
@@ -51,13 +51,12 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
 
   return !sendReady
    ? (
-    // <div className={styles.container}>
-    <Popup
+
+    <Popup 
         // ref={}
-        open={openState}
         className={styles.container}
+        open={openState}
         closeOnDocumentClick={false}
-        lockScroll
         modal
         position="center center"
         onClose={(e) => {
@@ -74,10 +73,11 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <label  className={styles.textinputlabel}>Name</label> 
         <br></br>
         <input
+            className={styles.textinputlabelarea}
             required 
             type="text"
             value={name}
-            placeholder="Zeta"
+            placeholder="Name"
             onChange={
                 (e) => setName(e.target.value)
             } 
@@ -88,10 +88,11 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <label className={styles.modalemaillabel}>Email</label> 
         <br></br>
         <input
-        required 
+            className={styles.modalemaillabelarea}
+            required 
             type="email"
             value={email} 
-            placeholder="example@example.com"
+            placeholder="your@email.com"
             onChange={ (e) => setEmail(e.target.value) } 
         />
         </div>
@@ -101,6 +102,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <label className={styles.modalmessagelabel}>Message</label> 
         <br></br>
         <textarea 
+            className={styles.modalmessagelabelarea}
             required 
             value={message} 
             placeholder="Your Message here!"
@@ -116,10 +118,15 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
     // {/* </div> */}
     
   )
-  : (
-      <div>
-          Kiitos!
+  : 
+  (
+      <Popup> 
+      <div className={styles.aftersentmsg}>
+         Your message was successfuly recived!
       </div>
+      
+      </Popup>
+      
   )
 }
 

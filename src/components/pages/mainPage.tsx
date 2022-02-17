@@ -94,7 +94,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
             e.preventDefault()
           }}
         >
-        😎Contact Us😎
+        😎Contact Me😎
         </button>
 
 

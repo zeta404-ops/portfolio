@@ -1,7 +1,4 @@
-.container {
-    width: 45px;
-    height: 30px;
-}
+
 .container:focus {
     border-color: #8464ca;
     box-shadow: 0 0 12px #beace3;
@@ -54,6 +51,7 @@
     text-align: center;
     user-select: none;
     margin-bottom: 30px;
+    
 }
 
 .modalemail{
@@ -84,6 +82,7 @@
     align-items: center;
     text-align: center;
     margin: 3px;
+    text-align: center;
 }
 
 .modalemaillabel{
@@ -101,23 +100,20 @@
 }
 
 
-@media screen and (max-width: 900px){
+.aftersentmsg{
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: #ee6c4d;
+    text-align: center;
+    user-select: none;
+}
 
-    .container {
-        max-width: 200px;
+@media screen and (max-width: 600px){
 
-
+        .modalmessagelabelarea, .modalemaillabelarea, .textinputlabelarea{
+         width: 190px;
+         text-align: center;
+        }
     }
-    .textinputlabel{
-
-        max-width: 200px;
-    }
-    .modalemaillabel{
-        max-width: 200px;
-    }
-    .modalmessagelabel{
-        max-width: 200px;
-  
-        
-    }
-      }
+      

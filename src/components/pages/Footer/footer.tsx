@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = () => {
     <div className={styles.cfooter}>
 
         <div className={styles.social}></div>
-            <ul className="list-inline">
+            <ul>
                 <li ><a className={styles.copyright} href="/terms">Terms</a></li>
                 <li ><a className={styles.copyright} href="/privacypolicy">Privacy Policy</a></li>
             </ul>

@@ -11,45 +11,42 @@ const Project: React.FC<ProjectProps> = () => {
     
   <div className={styles.container}>
   <div className={styles.picBanner}>
-    <Banner text='MY PROJECTS📁' text2='Your project, our project.'  className={styles.pic}/> 
+    <Banner text='MY PROJECTS📁' text2='Coding is a way of life'  className={styles.pic}/> 
   </div>
 
 
   <div>
     <h3 className={styles.zeta} >HERE YOU WILL SEE SOME OF MY GITHUB PROJECTS</h3>
     <div className={styles.GitRepos}>
-      <a className={styles.repo1} href="https://github.com/zeta404-ops/FindTheUnknown" target="_blank" rel="noreferrer" ><img src="https://gh-card.dev/repos/zeta404-ops/FindTheUnknown.svg?fullname=" alt='ftw'/></a>
-      <a className={styles.repo2} href="https://github.com/varia-ict/varia-agile-20C-ryhma-3" target="_blank" rel="noreferrer" ><img src="https://gh-card.dev/repos/varia-ict/varia-agile-20C-ryhma-3.svg?fullname=" alt='ictvaria'/></a>
-      <a className={styles.repo3} href="https://github.com/zeta404-ops/portfolio" target="_blank" rel="noreferrer" ><img src="https://gh-card.dev/repos/zeta404-ops/portfolio.svg?fullname=" alt='portfolio' /></a>
+      <a href="https://github.com/zeta404-ops/FindTheUnknown" target="_blank" rel="noreferrer" ><img className={styles.repo1} src="https://gh-card.dev/repos/zeta404-ops/FindTheUnknown.svg?fullname=" alt='ftw'/></a>
+      <a href="https://github.com/varia-ict/varia-agile-20C-ryhma-3" target="_blank" rel="noreferrer" ><img className={styles.repo2} src="https://gh-card.dev/repos/varia-ict/varia-agile-20C-ryhma-3.svg?fullname=" alt='ictvaria'/></a>
+      <a href="https://github.com/zeta404-ops/portfolio" target="_blank" rel="noreferrer" ><img className={styles.repo3} src="https://gh-card.dev/repos/zeta404-ops/portfolio.svg?fullname=" alt='portfolio' /></a>
    </div>
    <br></br>
    <br></br>
    <br></br>
    <br></br>
    <br></br>
-   <h3 className={styles.zeta} >HERE YOU WILL SEE SOME OF MY UNITY PROJECTS</h3>
+   <h3 className={styles.zeta} >HERE YOU WILL SEE SOME OF MY UNITY PROJECTS SOON!</h3>
   </div>
 
-    <div className={styles.unityGamesT1}> 
-    <a className={styles.unity3} href="https://play.unity.com/mg/other/challenge-5-13" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/3CFmPWC/whack-a-food.png" alt='WHACK-A-FOOD'/></a>
-    <a className={styles.unity2} href="https://play.unity.com/mg/other/soccer-scripting-8" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/r68WmDR/pro3.png" alt='SOCCER SCRIPTING'/></a>
-    <a className={styles.unity1} href="https://play.unity.com/mg/other/pava-katar" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/PQxmhyt/pavakatar.png" alt='Unity Game Pava Katar'/></a>
-    
-    </div>
-    <br></br>
-    <div className={styles.unityGamesT2}> 
+    {/* <div className={styles.unityGamesT1}> 
+    <a href="https://play.unity.com/mg/other/webgl-builds-150727" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>PROTOTYPE 1</h3></a>
+    <a href="https://play.unity.com/mg/other/webgl-builds-150716" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>PROTOTYPE 2</h3></a>
+    <a href="https://play.unity.com/mg/other/prototype-3-110" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>PROTOTYPE 3</h3></a>
+    <a href="https://play.unity.com/mg/other/webgl-builds-150707" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>PROTOTYPE 4</h3></a>
+    <a href="https://play.unity.com/mg/other/pava-katar" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>PROTOTYPE 5</h3></a>
+    <a href="https://play.unity.com/mg/other/webgl-builds-150693" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>CHALLENGE 1</h3></a>
+    <a href="https://play.unity.com/mg/other/webgl-builds-150694" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>CHALLENGE 2</h3></a>
+    <a href="https://play.unity.com/mg/other/webgl-builds-150705" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>CHALLENGE 3</h3></a>
+    <a href="https://play.unity.com/mg/other/soccer-scripting-8" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>CHALLENGE 4</h3></a>
+    <a href="https://play.unity.com/mg/other/challenge-5-13" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>CHALLENGE 5</h3></a>
+    <a href="https://play.unity.com/mg/other/webgl-builds-150699" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>Roll-a-Ball</h3></a>
+    <a href="https://play.unity.com/mg/other/pertin-maatila" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>Pertin Maatila</h3></a>
+    <a href="https://play.unity.com/mg/lego/paistettu-peruna" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>Paistettu Peruna</h3></a>
+    <a href="https://play.unity.com/mg/other/mod-the-cube-1642" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>Mod the Cube</h3></a>
+    </div> */}
 
-    <a className={styles.unity4} href="https://play.unity.com/mg/other/webgl-builds-88726" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/7V9MC79/zeta.png" alt='WEBGL ZETA'/></a>
-    <br></br>
-    <a className={styles.unity5} href="https://play.unity.com/mg/other/mod-the-cube-1642" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/M5xnmQW/mdc.png" alt='MOD THE CUBE'/></a>
-    <br></br>
-    <a className={styles.unity6} href="https://play.unity.com/mg/lego/paistettu-peruna" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/1XcZXm8/pp.png" alt='PAISTETTU PERUNA'/></a>
-    <br></br>
-    <a className={styles.unity7} href="https://play.unity.com/mg/other/prototype-3-110" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/Y3w6rJS/PROTOTYPE3.png" alt='PROTOTYPE3'/></a>
-    </div>
-
-
-    
 
   </div>
 
