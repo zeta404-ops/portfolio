@@ -14,6 +14,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
     const [email, setEmail] = useState("");
+    const [sendReady, setSendReady] = useState<Boolean>(false)
 
    const handleForm = async () => {
 
@@ -25,21 +26,31 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
        const fiebaseInstance = FirebaseServices.getFirestoreInstance()
 
        await addDoc(collection(fiebaseInstance, 'ContactForm'), {
+           message: {
+               html: `Uusi viesti portfoliosta.  <br><br> Nimi: ${name} <br> Viesti: ${message} <br> Email: ${email} <br> Time: ${new Date()}`,
+               subject: 'UUSI VIESTI PORTFOLIOSTA!'
+           },
            name: name,
            email: email,
-           message: message,
+           msg: message,
+           to: "akazeta404@gmail.com",
            date: new Date().getTime(),
        })
-       .then(() => console.log('lähetys onnistui'))
+       .then(() => {
+           setEmail("")
+           setName("")
+           setMessage("")
+           setSendReady(true)
+
+       })
        .catch((err) => console.log(err.message));
 
    }
 
    useEffect(() => console.log("modal:", openState), [openState])
 
-  return (
-
-    
+  return !sendReady
+   ? (
     // <div className={styles.container}>
     <Popup
         // ref={}
@@ -104,6 +115,11 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
     </Popup>
     // {/* </div> */}
     
+  )
+  : (
+      <div>
+          Kiitos!
+      </div>
   )
 }
 

@@ -1,7 +1,6 @@
 .container {
     width: 45px;
     height: 30px;
-    
 }
 .container:focus {
     border-color: #8464ca;
@@ -100,3 +99,25 @@
     text-align: center;
     margin: 3px;
 }
+
+
+@media screen and (max-width: 900px){
+
+    .container {
+        max-width: 200px;
+
+
+    }
+    .textinputlabel{
+
+        max-width: 200px;
+    }
+    .modalemaillabel{
+        max-width: 200px;
+    }
+    .modalmessagelabel{
+        max-width: 200px;
+  
+        
+    }
+      }
