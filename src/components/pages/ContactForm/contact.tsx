@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
-import styles from './contact.module.scss'
+import styles from './contact.module.scss';
+import FirebaseServices from '../../../firebase/firebaseServices';
+import { doc, setDoc, collection, addDoc} from "firebase/firestore"; 
+
 
 type ContactProps = {
     setModalIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -8,20 +11,28 @@ type ContactProps = {
 }
 
 const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
-    const [name, setName] = useState("")
-    const [message, setMessage] = useState("")
-    const [email, setEmail] = useState("")
+    const [name, setName] = useState("");
+    const [message, setMessage] = useState("");
+    const [email, setEmail] = useState("");
 
-   const handleForm = () => {
+   const handleForm = async () => {
+
        if (!name) return alert("name is missing");
        if (!email) return alert("email is missing");
        if (!message) return alert("message is missing");
-       alert(`
-       Successfuly submitted form
-       Your name: ${name}
-       Your email: ${email}
-       Your message: ${message}
-       `)
+
+
+       const fiebaseInstance = FirebaseServices.getFirestoreInstance()
+
+       await addDoc(collection(fiebaseInstance, 'ContactForm'), {
+           name: name,
+           email: email,
+           message: message,
+           date: new Date().getTime(),
+       })
+       .then(() => console.log('lähetys onnistui'))
+       .catch((err) => console.log(err.message));
+
    }
 
    useEffect(() => console.log("modal:", openState), [openState])
