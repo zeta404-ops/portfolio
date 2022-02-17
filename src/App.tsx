@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import ErrorPage from '../src/components/extra/ErrorPage';
-import MainPage from './components/example/mainPage';
-import cv from './components/example/CV/cv'
+import MainPage from './components/pages/mainPage';
+import cv from './components/pages/CV/cv'
 import styles from './App.module.scss'
-import Project from './components/example/Projects/projects'
+import Project from './components/pages/Projects/projects'
 import * as ReactBootStrap from "react-bootstrap"
 
 import {
@@ -11,9 +11,10 @@ import {
   Switch,
   Route} from 'react-router-dom';
 import Banner from './components/banner/banner';
-import Contact from './components/example/ContactForm/contact';
-import Footer from './components/example/Footer/footer';
-
+import Contact from './components/pages/ContactForm/contact';
+import Footer from './components/pages/Footer/footer';
+import Policy from '../src/components/pages/Privacypolicy/privacypolicy'
+import Terms from '../src/components/pages/Termsandconditions/termsandconditions'
 
 const App: React.FC = () => {
 
@@ -52,6 +53,8 @@ const App: React.FC = () => {
      <Route exact path="/" render={() => <MainPage contactFormState={contactformIsOpen} setContactformState={setContactformIsOpen} />} />
      {/* <Route exact path='/' component={MainPage} /> */}
      <Route exact path='/projects' component={Project} />
+     <Route exact path='/privacypolicy' component={Policy} />
+     <Route exact path='/terms' component={Terms} />
      <Route exact path='/banner' component={Banner} />
      <Route exact path='/contact' component={Contact} />
      <Route exact path='/cv' component={cv} />
