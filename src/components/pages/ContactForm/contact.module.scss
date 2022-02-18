@@ -1,10 +1,3 @@
-
-.container:focus {
-    border-color: #8464ca;
-    box-shadow: 0 0 12px #beace3;
-}
-
-
 .sendbutton{
     min-width: 100px;
     background: #ee6c4d;
@@ -12,6 +5,8 @@
     color: white;
     align-items: center;
     font-weight: 700;
+    border-color: #d46549;
+    box-shadow: 0 0 11px #ff3300;
     
 }
 .cancelbutton{
@@ -21,6 +16,8 @@
     color: white;
     align-items: center;
     font-weight: 700;
+    border-color: #757271;
+    box-shadow: 0 0 11px #797271;
 }
 .sendbutton:hover{
     background: #9e432c;
@@ -109,6 +106,7 @@
     user-select: none;
     background-color: #61210f;
     background-image: linear-gradient(315deg, #61210f 0%, #ee6c4d 74%);
+    
  
 }
 
