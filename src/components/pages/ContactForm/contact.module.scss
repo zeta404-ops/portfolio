@@ -104,16 +104,30 @@
     font-family: Trebuchet MS, sans-serif;
     font-weight: 700;
     font-size: 35px;
-    color: #ee6c4d;
+    color: #ffffff;
     text-align: center;
     user-select: none;
+    background-color: #61210f;
+    background-image: linear-gradient(315deg, #61210f 0%, #ee6c4d 74%);
+ 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
 
         .modalmessagelabelarea, .modalemaillabelarea, .textinputlabelarea{
          width: 190px;
          text-align: center;
+        }
+
+        .aftersentmsg{
+
+            font-size: 32px;
+            
+            input{
+               margin-top: 30px;
+               padding: 30px;
+               margin-bottom: 30px;
+            }
         }
     }
       

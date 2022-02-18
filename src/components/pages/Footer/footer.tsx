@@ -29,6 +29,8 @@ const Footer: React.FC<FooterProps> = () => {
             </a>
             </div>
             </div>
+            
+            
     </div>
     
   )

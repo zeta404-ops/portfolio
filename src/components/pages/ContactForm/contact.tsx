@@ -17,7 +17,6 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
     const [sendReady, setSendReady] = useState<Boolean>(false)
 
    const handleForm = async () => {
-
        if (!name) return alert("name is missing");
        if (!email) return alert("email is missing");
        if (!message) return alert("message is missing");
@@ -35,6 +34,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
            msg: message,
            to: "akazeta404@gmail.com",
            date: new Date().getTime(),
+           
        })
        .then(() => {
            
@@ -90,10 +90,13 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <input
             className={styles.modalemaillabelarea}
             required 
-            type="email"
+            minLength={6}
+            type="text"
+            inputMode={"email"}
             value={email} 
             placeholder="your@email.com"
             onChange={ (e) => setEmail(e.target.value) } 
+            
         />
         </div>
 
@@ -107,10 +110,13 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
             value={message} 
             placeholder="Your Message here!"
             rows={5} 
-            onChange={ (e) => setMessage(e.target.value) } 
+            onChange={
+                 (e) => setMessage(e.target.value) 
+            } 
         />
         </div>
          <div className={styles.sendbuttonDiv} > 
+                
              <input className={styles.sendbutton} type="button" value="Send" onClick={() => handleForm()} />
              <input className={styles.cancelbutton} type="button" value="Cancel" onClick={() => setModalIsOpen(false)} />
          </div>
@@ -119,15 +125,19 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
     
   )
   : 
-  (
+  ( 
+      
       <Popup> 
+          
       <div className={styles.aftersentmsg}>
          Your message was successfuly recived!
+         <br></br>
+        <input className={styles.cancelbutton} type="button" value="Done" onClick={() => setModalIsOpen(false)  === setSendReady(false)} />
       </div>
       
       </Popup>
       
-  )
+       )
 }
 
 export default Contact
