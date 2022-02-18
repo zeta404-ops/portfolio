@@ -1,3 +1,8 @@
+
+# ZETA'S PORTFOLIO PAGE 
+
+This project was created and edited by Zeta(Zhinar M)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
