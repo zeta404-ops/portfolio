@@ -4,13 +4,18 @@ import Banner from '../../banner/banner'
 import {CgInstagram} from 'react-icons/cg'
 import {AiOutlineLinkedin} from 'react-icons/ai'
 
+
+
+// NOT IN USE !!!!
+
+
 type AboutProps = {
 
 }
 
 const About: React.FC<AboutProps> = () => {
   return (
-    
+    //pic banner visable in all pages but with different title
   <div className={styles.container}>
   <div className={styles.picBanner}>
   <Banner text='⭐ABOUT ME⭐' text2='if it were easy everybody would do it.' className={styles.pic}/> 
@@ -39,7 +44,7 @@ const About: React.FC<AboutProps> = () => {
         <h3 className={styles.redtitle}>CONTACT ME</h3>
 
         <div className={styles.socials}>
-
+      
          <div> 
            <a href="https://www.instagram.com/zhinar_0/" target="_blank" rel="noreferrer">
              <CgInstagram size={55} color="#D41141"/> 

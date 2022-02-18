@@ -21,7 +21,8 @@ const Cv: React.FC<CvProps> = () => {
 
       <h3 className={styles.zeta}>🌐Click at the icons to visit official badge issuer site🌐</h3>
     <div className={styles.credly}> 
-
+      
+      {/* links to my badges */}
       <a className={styles.badge1} href="https://www.credly.com/badges/19303848-984e-498d-8015-50b56bc24cab/public_url" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/16bf6pK/cybersecurity-essentials.png" alt='cyber ess badge'/></a>
       <a className={styles.badge2} href="https://www.credly.com/badges/836d77f9-b428-441a-8d92-13fa8b5a0f26/public_url" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/RpSSWGZ/introduction-to-cybersecurity.png" alt='cyber intro badge'/></a>
       <a className={styles.badge3} href="https://www.credly.com/badges/2e122d42-14f5-4b9e-bd49-fd79990c1841/public_url" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/TtdJZSx/introduction-to-iot.png" alt='intro IOT badge'/></a>
@@ -40,7 +41,7 @@ const Cv: React.FC<CvProps> = () => {
         Project management experience
     </h3>
     <h3 className={styles.graph}>Proficiency with programming languages such as.</h3>
-    <h3 className={styles.graph}>SQL - Node Sql - Csharp - Unity - React - Java - HTML - CSS - TypeScript - JavaScript - ReactJs</h3>
+    <h3 className={styles.codes}>SQL - Node Sql - Csharp - Unity - React - Java - HTML - CSS - TypeScript - JavaScript - ReactJs</h3>
     <h3 className={styles.graph}>Learning concepts and applying them to other problems.</h3>
     <h3 className={styles.graph}>Mathematical skills.</h3>
     <h3 className={styles.graph}>Problem-solving capability.</h3>

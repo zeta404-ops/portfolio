@@ -15,6 +15,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
 
   useEffect(() => {
 
+    // timer for the button to be inactive about 200ms 
     const timer = setTimeout(() => {
       setButtonActive(true);
     }, 200);
@@ -24,15 +25,14 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
   },  [contactFormState]);
 
   return (
+
+    // Banner is commanded here
     <div className={styles.container}>
-
       <div className={styles.pic}>
-      {/* <img className={styles.pic} src={banner} alt='Banner for web dev'/> */}
       <Banner text='WEB DEVELOPER' text2='Designing success through creative web design'  className={styles.pic}/> 
-      
      </div>
-     {/* <Link to="/aboutme"><p className={styles.explore}>About Me</p></Link> */}
 
+    {/* my own image and introduction  */}
      <div className={styles.zeta}>
       <img className={styles.zetaimg} src="https://i.ibb.co/nRjFWrg/zetaa.jpg" alt='zeta'/>
        <h3 className={styles.zeta}>Hello! Welcome to my portfolio profile.<br></br>
@@ -41,6 +41,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
        </h3>
       </div>
 
+          {/* about me div */}
           <div className={styles.txtRvl1}> 
                 <h3 className={styles.explore}>😃ABOUT ME😃</h3>
             <div className={styles.zeta1}>
@@ -51,6 +52,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
             </div>
           </div>
 
+          {/* setup and equipment comes here */}
           <div className={styles.txtRvl2}> 
               <h3 className={styles.explore}>💻Setup and Equipment💻</h3> 
             <div className={styles.zeta2}>
@@ -64,6 +66,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
             </div>
           </div>
 
+          {/* my ide's comes here */}
             <div className={styles.txtRvl3}> 
                 <h3 className={styles.explore}>🔸IDE🔸</h3>
               <div className={styles.zeta3}>
@@ -75,15 +78,14 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
               </div>
             </div>
 
+        {/* takes contactform state and if its clicked it sets modal to open */}
         { 
           contactFormState
            ? <Contact openState={contactFormState} setModalIsOpen={setContactformState}/> 
            : null
         }
-        {/* <Link to="/contact"><p className={styles.explore}>CONTACT ME</p></Link> */}
-        {/* <Contact modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen}/> */}
-        {/* <Link to={'contact'} className={styles.explore}>hh</Link> */}
 
+        {/* contact me button */}
         <button
           className={styles.contact}
           disabled={!buttonActive}

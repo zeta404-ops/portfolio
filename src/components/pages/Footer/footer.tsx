@@ -12,12 +12,14 @@ const Footer: React.FC<FooterProps> = () => {
 
         <div className={styles.social}></div>
             <ul>
+              {/* terms and privacy policy link */}
                 <li ><a className={styles.copyright} href="/terms">Terms</a></li>
                 <li ><a className={styles.copyright} href="/privacypolicy">Privacy Policy</a></li>
             </ul>
+            {/* just a text and copyright to owner */}
             <p className={styles.copyright}>Zhinar © 2022</p>
             <div className={styles.socials}>
-
+            {/* icons with reactbootstrap icons and linked */}
             <div className={styles.ico1}> 
             <a href="https://www.instagram.com/zhinar_0/" target="_blank" rel="noreferrer" >
                 <CgInstagram size={55} color="#ffffff"/> 
