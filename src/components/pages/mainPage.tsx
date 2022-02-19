@@ -34,7 +34,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
 
     {/* my own image and introduction  */}
      <div className={styles.zeta}>
-      <img className={styles.zetaimg} src="https://i.ibb.co/nRjFWrg/zetaa.jpg" alt='zeta'/>
+      {/* <img className={styles.zetaimg} src="https://i.ibb.co/nRjFWrg/zetaa.jpg" alt='zeta'/> */}
        <h3 className={styles.zeta}>Hello! Welcome to my portfolio profile.<br></br>
         I am Zhinar Masood.<br></br>
         I study information and communication technology and I'm excited about programming and cyber security.
