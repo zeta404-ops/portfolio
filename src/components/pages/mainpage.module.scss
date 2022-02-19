@@ -104,7 +104,11 @@
   display: block;
 }
 
+@media screen and (max-width: 800px){
 
-.txtRvl1,.txtRvl2,.txtRvl3{
+  .explore,.contact {
+    font-size: 24px;
+
+  }
 
 }
