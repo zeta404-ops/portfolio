@@ -70,6 +70,14 @@
       font-size: 22px;
     }
     .repo1, .repo2, .repo3{
-      width: 580px;
+      width: 380px;
     }
   }
+
+
+  
+@media screen and (max-width: 800px){
+  .unityGamesT1,.projects1{
+    width: 170px;
+  }
+}
