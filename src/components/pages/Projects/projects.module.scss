@@ -22,7 +22,6 @@
     text-align: center;
     border-color: #ee6c4d;
     box-shadow: 0 0 11px #ee6c4d;
-    
   }
 
 .GitRepos{
@@ -34,7 +33,7 @@
     justify-content: space-around;
     flex-flow: wrap;
     cursor: pointer;
-    margin-bottom: 135px;
+    margin-bottom: 185px;
   }  
 
   .unityGamesT1,.projects1{
@@ -42,6 +41,7 @@
     padding: 20px;
     width: 210px;
   }
+
 
   .projects1:hover{
     animation: bloom ease-in-out .75s forwards;
