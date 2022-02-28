@@ -37,8 +37,28 @@
     margin-bottom: 135px;
   }  
 
-  .unityGamesT1{
+  .unityGamesT1,.projects1{
     text-decoration: none;
+    padding: 20px;
+    width: 210px;
+  }
+
+  .projects1:hover{
+    animation: bloom ease-in-out .75s forwards;
+  }
+  .projects1:hover::before {
+    animation: circle .75s;
+  }
+  @keyframes bloom {
+    0% {
+      filter: grayscale(.8);
+    }
+    40% {
+      filter: grayscale(.5);
+    }
+    100% {
+      filter: grayscale(0);
+    }
   }
 
   .container a{
@@ -50,6 +70,6 @@
       font-size: 22px;
     }
     .repo1, .repo2, .repo3{
-      width: 380px;
+      width: 580px;
     }
   }

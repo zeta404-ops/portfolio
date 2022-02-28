@@ -3,6 +3,8 @@ import Popup from 'reactjs-popup';
 import styles from './contact.module.scss';
 import FirebaseServices from '../../../firebase/firebaseServices';
 import {collection, addDoc} from "firebase/firestore"; 
+import * as EmailValidator from 'email-validator';
+
 
 
 type ContactProps = {
@@ -10,16 +12,21 @@ type ContactProps = {
     openState: boolean
 }
 
+
+
 const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
     const [email, setEmail] = useState("");
     const [sendReady, setSendReady] = useState<Boolean>(false)
 
+    
    const handleForm = async () => {
        if (!name) return alert("name is missing");
        if (!email) return alert("email is missing");
        if (!message) return alert("message is missing");
+       const isValidEmail = EmailValidator.validate(email); // true 
+       if (!isValidEmail) return alert("email is not valid! please enter a valid email address");
 
 
        const fiebaseInstance = FirebaseServices.getFirestoreInstance()
@@ -38,6 +45,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
            date: new Date().getTime(),
            
        })
+       
        //after the form is sent it will clear the inputs and sendready function comesup which is a popup for saying successfully sent the contact
        .then(() => {
            
@@ -50,8 +58,11 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
 
    }
 
+
+
    useEffect(() => console.log("modal:", openState), [openState])
 
+   
    //if it hasn't been sent it will show you the form 
   return !sendReady
    ? (
@@ -78,7 +89,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <br></br>
         <input
             className={styles.textinputlabelarea}
-            required 
+            required={true}
             type="text"
             value={name}
             placeholder="Name"
@@ -93,9 +104,9 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <br></br>
         <input
             className={styles.modalemaillabelarea}
-            required 
+            required={true}
             minLength={6}
-            type="text"
+            type="email"
             inputMode={"email"}
             value={email} 
             placeholder="your@email.com"
@@ -110,7 +121,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
         <br></br>
         <textarea 
             className={styles.modalmessagelabelarea}
-            required 
+            required={true}
             value={message} 
             placeholder="Your Message here!"
             rows={5} 

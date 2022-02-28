@@ -53,6 +53,7 @@ const App: React.FC = () => {
      <Route exact path="/" render={() => <MainPage contactFormState={contactformIsOpen} setContactformState={setContactformIsOpen} />} />
      {/* <Route exact path='/' component={MainPage} /> */}
      <Route exact path='/projects' component={Project} />
+     <Route exact path='/admin' component={Project} />
      <Route exact path='/privacypolicy' component={Policy} />
      <Route exact path='/terms' component={Terms} />
      <Route exact path='/banner' component={Banner} />

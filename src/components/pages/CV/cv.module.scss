@@ -74,5 +74,30 @@
   background-color: #ee6c4d;
   border-color: #ee6c4d;
   box-shadow: 0 0 11px #ee6c4d;
+  text-align: center;
 }
+}
+
+img{
+  text-decoration: none;
+  padding: 20px;
+  width: 210px;
+}
+
+img:hover{
+  animation: bloom ease-in-out .75s forwards;
+}
+img:hover::before {
+  animation: circle .75s;
+}
+@keyframes bloom {
+  0% {
+    filter: grayscale(.8);
+  }
+  40% {
+    filter: grayscale(.5);
+  }
+  100% {
+    filter: grayscale(0);
+  }
 }

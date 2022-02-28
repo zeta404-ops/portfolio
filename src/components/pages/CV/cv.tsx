@@ -41,7 +41,7 @@ const Cv: React.FC<CvProps> = () => {
         Project management experience
     </h3>
     <h3 className={styles.graph}>Proficiency with programming languages such as.</h3>
-    <h3 className={styles.codes}>SQL - Node Sql - Csharp - Unity - React - Java - HTML - CSS - TypeScript - JavaScript - ReactJs</h3>
+    <h3 className={styles.codes}>SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - TypeScript - JavaScript - ReactJs</h3>
     <h3 className={styles.graph}>Learning concepts and applying them to other problems.</h3>
     <h3 className={styles.graph}>Mathematical skills.</h3>
     <h3 className={styles.graph}>Problem-solving capability.</h3>
