@@ -57,6 +57,19 @@ const Cv: React.FC<CvProps> = () => {
           <br></br>I gave the class assignments based on the lesson plan available
        </h3>
 
+       <h3 className={styles.internship}>📱Good knowledge in these programs and editors📱</h3>
+       <h3 className={styles.graph}>LUMION 8</h3>
+       <h3 className={styles.graph}>BLENDER</h3>
+       <h3 className={styles.graph}>UNITY</h3>
+       <h3 className={styles.graph}>GITHUB</h3>
+       <h3 className={styles.graph}>AUDACITY</h3>
+       <h3 className={styles.graph}>FILEZILLA SERVER</h3>
+       <h3 className={styles.graph}>OBS STUDIO</h3>
+       <h3 className={styles.graph}>WORDPRESS</h3>
+       <h3 className={styles.graph}>GIMP</h3>
+       <h3 className={styles.graph}>ADOBE PHOTOSHOP 2022</h3>
+
+
   </div>
 
   )

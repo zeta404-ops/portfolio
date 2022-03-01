@@ -45,7 +45,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
           <div className={styles.txtRvl1}> 
                 <h3 className={styles.explore}>😃ABOUT ME😃</h3>
             <div className={styles.zeta1}>
-                <h3 className={styles.zeta}>I'm currently learning:<br></br>SQL - Node Sql - Csharp - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript.
+                <h3 className={styles.zeta}>I'm currently learning:<br></br>SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript.
                 <br></br>I'm looking to collaborate on making a Gameproject<br></br>
                 You can ask me about ... Technology, CyberSecurity, Hardware, Software.<br></br>
                   </h3>

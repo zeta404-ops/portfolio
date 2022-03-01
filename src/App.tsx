@@ -15,6 +15,7 @@ import Contact from './components/pages/ContactForm/contact';
 import Footer from './components/pages/Footer/footer';
 import Policy from '../src/components/pages/Privacypolicy/privacypolicy'
 import Terms from '../src/components/pages/Termsandconditions/termsandconditions'
+import admin from '../src/components/pages/AdminP/admin'
 
 const App: React.FC = () => {
 
@@ -50,14 +51,14 @@ const App: React.FC = () => {
 
    <Switch>
      {/* Changing content comes here */}
-     <Route exact path="/" render={() => <MainPage contactFormState={contactformIsOpen} setContactformState={setContactformIsOpen} />} />
+     <Route exact path="/" render={() => <MainPage contactFormState={contactformIsOpen} setContactformState={setContactformIsOpen} />}/>
      {/* <Route exact path='/' component={MainPage} /> */}
-     <Route exact path='/projects' component={Project} />
-     <Route exact path='/admin' component={Project} />
-     <Route exact path='/privacypolicy' component={Policy} />
-     <Route exact path='/terms' component={Terms} />
-     <Route exact path='/banner' component={Banner} />
-     <Route exact path='/contact' component={Contact} />
+     <Route exact path='/projects' component={Project}/>
+     <Route exact path='/admin' component={admin}/>
+     <Route exact path='/privacypolicy' component={Policy}/>
+     <Route exact path='/terms' component={Terms}/>
+     <Route exact path='/banner' component={Banner}/>
+     <Route exact path='/contact' component={Contact}/>
      <Route exact path='/cv' component={cv} />
      <Route component={ErrorPage} />
    </Switch>

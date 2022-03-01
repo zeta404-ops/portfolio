@@ -1,12 +1,12 @@
 .sendbutton{
     min-width: 100px;
-    background: #ee6c4d;
+    background: #685894;
     border: none;
     color: white;
     align-items: center;
     font-weight: 700;
-    border-color: #d46549;
-    box-shadow: 0 0 11px #ff3300;
+    border-color: #685894;
+    box-shadow: 0 0 11px #685894;
     
 }
 .cancelbutton{
@@ -17,10 +17,10 @@
     align-items: center;
     font-weight: 700;
     border-color: #757271;
-    box-shadow: 0 0 11px #797271;
+    box-shadow: 0 0 11px #5a5a5a;
 }
 .sendbutton:hover{
-    background: #9e432c;
+    background: #4c3885;
 }
 
 .cancelbutton:hover{
@@ -34,7 +34,7 @@
     font-family: Trebuchet MS, sans-serif;
     font-weight: 700;
     font-size: 25px;
-    color: #ee6c4d;
+    color: #685894;
     text-align: center;
     user-select: none;
 }
@@ -104,8 +104,7 @@
     color: #ffffff;
     text-align: center;
     user-select: none;
-    background-color: #61210f;
-    background-image: linear-gradient(315deg, #61210f 0%, #ee6c4d 74%);
+    background-image: linear-gradient(-20deg, #4c348d 0%, #424770 100%);
     
 }
 

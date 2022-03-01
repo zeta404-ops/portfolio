@@ -16,13 +16,13 @@
   font-family: Trebuchet MS, sans-serif;
   font-weight: 700;
   font-size: 25px;
-  color: rgb(206, 255, 255);
-  background: #ee6c4d;
+  color: white;
+  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
   padding: 8px;
   margin: 40px;
   text-align: center;
-  border-color: #ee6c4d;
-  box-shadow: 0 0 11px #ee6c4d;
+  border-color: #685894;
+  box-shadow: 0 0 11px #685894;
   }
 
   .credly{
@@ -53,13 +53,13 @@
   font-family: Trebuchet MS, sans-serif;
   font-weight: 700;
   font-size: 25px;
-  color: rgb(206, 255, 255);
-  background: #ee6c4d;
+  color: white;
+  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
   padding: 8px;
   margin: 40px;
   text-align: center;
-  border-color: #ee6c4d;
-  box-shadow: 0 0 11px #ee6c4d;
+  border-color: #685894;
+  box-shadow: 0 0 11px #685894;
   }
 
 .graph{
@@ -71,9 +71,9 @@
 }
 .codes{
   color: white;
-  background-color: #ee6c4d;
-  border-color: #ee6c4d;
-  box-shadow: 0 0 11px #ee6c4d;
+  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+  border-color: #685894;
+  box-shadow: 0 0 11px #685894;
   text-align: center;
 }
 }
@@ -101,3 +101,4 @@ img:hover::before {
     filter: grayscale(0);
   }
 }
+

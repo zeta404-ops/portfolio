@@ -6,11 +6,11 @@
     height: auto;
     background-size: cover;
     background-repeat: no-repeat repeat;
-    background-color: #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;  
+    background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
     
 }
 
@@ -18,15 +18,13 @@
     font-family: Trebuchet MS, sans-serif;
     font-weight: 700;
     font-size: 55px;
-    color: #ee6c4d;
+    color: #ffffff;
     position: absolute;
     top: 27%;
     left: 30%;
     text-align: center;
     user-select: none;
     animation: blinker 7s linear infinite;
-    border-color: #ee6c4d;
-    text-shadow: 0 0 4px #ee6c4d;
 }
 .textcss2{
     font-family: Trebuchet MS, sans-serif;
@@ -39,8 +37,8 @@
     text-align: center;
     user-select: none;
     animation: blinker 4s linear infinite;
-    border-color: #ee6c4d;
-    text-shadow: 0 0 2px #ee6c4d;
+    border-color: #fee2f8;
+    text-shadow: 0 0 2px #fee2f8;
 }
 
 @keyframes blinker {

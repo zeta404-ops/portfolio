@@ -5,11 +5,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #a82e0c;
-    background-image: linear-gradient(315deg, #b84323 0%, #ee6c4d 74%);
+    background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
     position: fixed;
-    z-index: 1000;
-
+    z-index: 2000;
+  
   }
 
   .texts{
