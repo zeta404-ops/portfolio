@@ -4,6 +4,7 @@ import styles from './mainpage.module.scss'
 import Banner from '../banner/banner';
 import Contact from './ContactForm/contact';
 
+
 type MainPageProps = {
   contactFormState: boolean;
   setContactformState: React.Dispatch<React.SetStateAction<boolean>>
@@ -24,6 +25,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
 
   },  [contactFormState]);
 
+
   return (
 
     // Banner is commanded here
@@ -43,6 +45,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
 
           {/* about me div */}
           <div className={styles.txtRvl1}> 
+          
                 <h3 className={styles.explore}>😃ABOUT ME😃</h3>
             <div className={styles.zeta1}>
                 <h3 className={styles.zeta}>I'm currently learning:<br></br>SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript.

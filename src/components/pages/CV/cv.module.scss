@@ -25,6 +25,28 @@
   box-shadow: 0 0 11px #685894;
   }
 
+  .zetaDownload{
+    font-family: Trebuchet MS, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+  padding: 8px;
+  margin: 40px;
+  text-align: center;
+  border-color: #685894;
+  box-shadow: 0 0 11px #685894;
+  }
+
+  .zetaDownload:hover{
+    background-color: #685894;
+
+  }
+
+  .downloadbutton{
+    text-decoration: none;
+  }
+
   .credly{
     max-height: 100px;
     margin: 10px;
@@ -37,6 +59,7 @@
     flex-flow: wrap;
     cursor: pointer;
     text-align: center;
+    
   }
   .badge1,.badge2,.badge3,.badge4{
     width: 20%;
@@ -44,8 +67,8 @@
   }
 
   img{
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
   }
 
 
@@ -102,3 +125,11 @@ img:hover::before {
   }
 }
 
+@media screen and (max-width: 600px){
+
+  img{
+    min-width: 90px;
+  }
+
+
+}

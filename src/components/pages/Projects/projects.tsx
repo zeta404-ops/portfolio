@@ -47,8 +47,9 @@ const Project: React.FC<ProjectProps> = () => {
     <a href="https://play.unity.com/mg/lego/paistettu-peruna" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>Paistettu Peruna</h3></a>
     <a href="https://play.unity.com/mg/other/mod-the-cube-1642" target="_blank" rel="noreferrer" ><h3 className={styles.zeta}>Mod the Cube</h3></a>
     </div> */}
-      <a href="https://play.unity.com/u/zeta404ze" target="_blank" rel="noreferrer" ><img className={styles.projects1} src="https://i.ibb.co/wyZ8qyf/Official-unity-logo-copy.png" alt='unity profile'/></a>
-      <a href="https://www.behance.net/zhinarM" target="_blank" rel="noreferrer" ><img className={styles.projects1} src="https://i.ibb.co/vB8KtWT/lumionlogo-bd.png" alt='behance'/></a>
+      <a href="https://play.unity.com/u/zeta404ze" target="_blank" rel="noreferrer" ><img className={styles.projects1} src="https://i.ibb.co/tMr906w/Official-unity-logo-copy.png" alt='unity profile'/></a>
+      <a href="https://www.behance.net/zhinarM" target="_blank" rel="noreferrer" ><img className={styles.projects1} src="https://i.ibb.co/kc52ZQk/behance1.png" alt='behance'/></a>
+      <a href="https://github.com/zeta404-ops/" target="_blank" rel="noreferrer" ><img className={styles.projects1} src="https://i.ibb.co/233Gr3R/github.png" alt='github'/></a>
 
   </div>
 

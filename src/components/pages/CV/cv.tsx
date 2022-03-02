@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../../banner/banner'
 import styles from './cv.module.scss'
+
 type CvProps = {
 
 }
@@ -28,6 +29,11 @@ const Cv: React.FC<CvProps> = () => {
       <a className={styles.badge3} href="https://www.credly.com/badges/2e122d42-14f5-4b9e-bd49-fd79990c1841/public_url" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/TtdJZSx/introduction-to-iot.png" alt='intro IOT badge'/></a>
       <a className={styles.badge4} href="https://www.credly.com/badges/ab6bb0c7-b6b7-4e58-842f-7cd877545085/public_url" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/nwfPT5x/pkttracer.png" alt='PACKET TRACER badge'/></a>
     </div>
+
+    <a className={styles.downloadbutton} href="https://docdro.id/iqmqP32" target="_blank" rel="noreferrer" ><h3 className={styles.zetaDownload}>CLICK HERE TO DOWNLOAD ALL OF MY CISCO CERTIFICATIONS</h3></a>
+
+
+
     <h3 className={styles.zeta}>📚EDUCATION📚</h3>
     <h3 className={styles.graph} >Currently studying Bachelor of Degree in Information and Communication Technology, Varia</h3>
     <h3 className={styles.graph} >12.08.2020 - 03.06.2023</h3>
@@ -68,6 +74,8 @@ const Cv: React.FC<CvProps> = () => {
        <h3 className={styles.graph}>WORDPRESS</h3>
        <h3 className={styles.graph}>GIMP</h3>
        <h3 className={styles.graph}>ADOBE PHOTOSHOP 2022</h3>
+       <h3 className={styles.graph}>PACKET TRACER</h3>
+       <h3 className={styles.graph}>VIRTUALBOX VM</h3>
 
 
   </div>
