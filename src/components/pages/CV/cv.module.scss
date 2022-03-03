@@ -23,6 +23,7 @@
   text-align: center;
   border-color: #685894;
   box-shadow: 0 0 11px #685894;
+  border-radius: 25px;
   }
 
   .zetaDownload{
@@ -36,6 +37,7 @@
   text-align: center;
   border-color: #685894;
   box-shadow: 0 0 11px #685894;
+  border-radius: 25px;
   }
 
   .zetaDownload:hover{
@@ -59,7 +61,7 @@
     flex-flow: wrap;
     cursor: pointer;
     text-align: center;
-    
+    border-radius: 25px;
   }
   .badge1,.badge2,.badge3,.badge4{
     width: 20%;
@@ -71,6 +73,10 @@
     height: 60%;
   }
 
+  .downloadDiv:hover{
+
+    opacity: 0.5;
+  }
 
   .internship{
   font-family: Trebuchet MS, sans-serif;
@@ -83,6 +89,7 @@
   text-align: center;
   border-color: #685894;
   box-shadow: 0 0 11px #685894;
+  border-radius: 25px;
   }
 
 .graph{
@@ -91,6 +98,7 @@
   font-size: 25px;
   padding: 8px;
   text-align: center;
+  
 }
 .codes{
   color: white;
@@ -98,6 +106,8 @@
   border-color: #685894;
   box-shadow: 0 0 11px #685894;
   text-align: center;
+  border-radius: 25px;
+  padding: 10px;
 }
 }
 
