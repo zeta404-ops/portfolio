@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import styles from './mainpage.module.scss'
 import Banner from '../banner/banner';
 import Contact from './ContactForm/contact';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 type MainPageProps = {
@@ -15,7 +17,8 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
   const [buttonActive, setButtonActive] = useState<boolean>(true);
 
   useEffect(() => {
-
+    AOS.init({duration: 1500});
+    
     // timer for the button to be inactive about 200ms 
     const timer = setTimeout(() => {
       setButtonActive(true);
@@ -35,7 +38,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
      </div>
 
     {/* my own image and introduction  */}
-     <div className={styles.zeta}>
+     <div className={styles.zeta} data-aos="zoom-in">
       {/* <img className={styles.zetaimg} src="https://i.ibb.co/nRjFWrg/zetaa.jpg" alt='zeta'/> */}
        <h3 className={styles.zeta}>Hello! Welcome to my portfolio profile.<br></br>
         I am Zhinar.<br></br>
@@ -48,41 +51,39 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
           
           <div className={styles.txtRvl1}> 
           
-                <h3 className={styles.explore}>😃ABOUT ME😃</h3>
+                <h3 className={styles.explore} data-aos="fade-up-right">😃ABOUT ME😃</h3>
             <div className={styles.zeta1}>
             
-                <h3 className={styles.zeta}>I'm currently learning:<br></br>
-                <h3 className={styles.explore}>SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript</h3>
-                <br></br>I'm looking to collaborate on making a Gameproject<br></br>
-                You can ask me about ...<br></br>
-                <h3 className={styles.explore}>Technology, CyberSecurity, Hardware, Software</h3>
-                  </h3>
+                <h3 className={styles.zeta} data-aos="fade-up-left">I'm currently learning:</h3>
+                <h3 className={styles.explore1} data-aos="fade-up-right">SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript</h3>
+                <h3 className={styles.zeta} data-aos="fade-up-left">I'm looking to collaborate on making a Gameproject</h3>
+                <h3 className={styles.zeta} data-aos="fade-up-left"> You can ask me about ...</h3>
+                <h3 className={styles.explore2} data-aos="fade-up-right">Technology, CyberSecurity, Hardware, Software</h3>
             </div>
           </div>
 
           {/* setup and equipment comes here */}
-          <div className={styles.txtRvl2}> 
+          <div className={styles.txtRvl2}  data-aos="fade-up-left"> 
               <h3 className={styles.explore}>💻Setup and Equipment💻</h3> 
             <div className={styles.zeta2}>
-                <h3 className={styles.zeta}>PC SPECS<br></br>
-                Processor: Intel Core i7-8700K 3.7 GHz (up to 4.7 GHz)<br></br>
-                Operating System: Windows 10 64-bit<br></br>
-                Central memory: 32GB DDR4<br></br>
-                Graphics Card: NVIDIA GeForce GTX 1080TI 8GB<br></br>
-                Hard drive: 256GB m.2 SSD + 3TB HDD<br></br>
-                </h3>
+               <h3 className={styles.zeta} data-aos="fade-up-left">PC SPECS</h3>
+               <h3 className={styles.zeta} data-aos="fade-up">Processor: Intel Core i7-8700K 3.7 GHz (up to 4.7 GHz)</h3>
+               <h3 className={styles.zeta} data-aos="fade-down-right">Operating System: Windows 10 64-bit</h3>
+               <h3 className={styles.zeta} data-aos="fade-right">Central memory: 32GB DDR4</h3>
+               <h3 className={styles.zeta} data-aos="fade-up-right">Graphics Card: NVIDIA GeForce GTX 1080TI 8GB</h3>
+               <h3 className={styles.zeta} data-aos="fade-up-left">Hard drive: 256GB m.2 SSD + 3TB HDD</h3>
             </div>
           </div>
 
           {/* my ide's comes here */}
             <div className={styles.txtRvl3}> 
-                <h3 className={styles.explore}>🔸IDE🔸</h3>
+                <h3 className={styles.explore} data-aos="fade-up">🔸IDE🔸</h3>
               <div className={styles.zeta3}>
-                <h3 className={styles.zeta}>VISUAL STUDIO CODE<br></br>
-                Visual Studio 2019<br></br>
-                IntteliJ IDEA Community Edition<br></br>
-                Apache NetBeans IDE 12.0
-                </h3>
+                <h3 className={styles.zeta} data-aos="fade-up">VISUAL STUDIO CODE</h3>
+                <h3 className={styles.zeta} data-aos="fade-up-right">Visual Studio 2019</h3>
+                <h3 className={styles.zeta} data-aos="fade-down">IntteliJ IDEA Community Edition</h3>
+                <h3 className={styles.zeta} data-aos="fade-up">Apache NetBeans IDE 12.0</h3>
+               
               </div>
             </div>
 
@@ -94,7 +95,8 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
         }
 
         {/* contact me button */}
-        <button
+        <button   
+          data-aos="slide-up"
           className={styles.contact}
           disabled={!buttonActive}
           onClick={(e) => {
