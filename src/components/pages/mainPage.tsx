@@ -38,12 +38,12 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
      </div>
 
     {/* my own image and introduction  */}
-     <div className={styles.zeta} data-aos="zoom-in">
+
+     <div className={styles.zeta}>
       {/* <img className={styles.zetaimg} src="https://i.ibb.co/nRjFWrg/zetaa.jpg" alt='zeta'/> */}
-       <h3 className={styles.zeta}>Hello! Welcome to my portfolio profile.<br></br>
-        I am Zhinar.<br></br>
-        I study information and communication technology and I'm excited about programming and cyber security.
-       </h3>
+       <h3 className={styles.zeta} data-aos="zoom-in">Hello! Welcome to my portfolio profile.</h3>
+       <h3 className={styles.zeta} data-aos="fade-up-right"> I am Zhinar.</h3>
+       <h3 className={styles.zeta} data-aos="fade-up-left">I study information and communication technology and I'm excited about programming and cyber security.</h3>
       </div>
 
           {/* about me div */}
