@@ -17,7 +17,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
   const [buttonActive, setButtonActive] = useState<boolean>(true);
 
   useEffect(() => {
-    AOS.init({duration: 1500});
+    AOS.init({ once: true, duration: 800, offset: 200, });
     
     // timer for the button to be inactive about 200ms 
     const timer = setTimeout(() => {
@@ -49,23 +49,36 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
           {/* about me div */}
 
           
-          <div className={styles.txtRvl1}> 
+          {/* <div className={styles.txtRvl1}>  */}
           
                 <h3 className={styles.explore} data-aos="fade-up-right">😃ABOUT ME😃</h3>
-            <div className={styles.zeta1}>
-            
                 <h3 className={styles.zeta} data-aos="fade-up-left">I'm currently learning:</h3>
-                <h3 className={styles.explore1} data-aos="fade-up-right">SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript</h3>
+                {/* <h3 className={styles.explore1} data-aos="fade-up-right">SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript</h3> */}
+                <h3 className={styles.zeta2} data-aos="fade-up-left">Node Sql</h3>
+                <h3 className={styles.zeta2} data-aos="fade-up-right">C#</h3>
+                <h3 className={styles.zeta2} data-aos="fade-up">Unity</h3>
+                <h3 className={styles.zeta2} data-aos="fade-down">React</h3>
+                <h3 className={styles.zeta2} data-aos="zoom-in">Java</h3>
+                <h3 className={styles.zeta2} data-aos="zoom-out">HTML</h3>
+                <h3 className={styles.zeta2} data-aos="fade-down">CSS</h3>
+                <h3 className={styles.zeta2} data-aos="fade-down-right">JAVASCRIPT</h3>
+                <h3 className={styles.zeta2} data-aos="zoom-in">Typescript</h3>
+                <h3 className={styles.zeta2} data-aos="zoom-out">ReactJS</h3>
+
                 <h3 className={styles.zeta} data-aos="fade-up-left">I'm looking to collaborate on making a Gameproject</h3>
                 <h3 className={styles.zeta} data-aos="fade-up-left"> You can ask me about ...</h3>
-                <h3 className={styles.explore2} data-aos="fade-up-right">Technology, CyberSecurity, Hardware, Software</h3>
-            </div>
-          </div>
+
+                {/* <h3 className={styles.explore2} data-aos="fade-up-right">Technology, CyberSecurity, Hardware, Software</h3> */}
+                <h3 className={styles.zeta2} data-aos="zoom-in">Technology</h3>
+                <h3 className={styles.zeta2} data-aos="fade-down">CyberSecurity</h3>
+                <h3 className={styles.zeta2} data-aos="zoom-out">Hardware</h3>
+                <h3 className={styles.zeta2} data-aos="fade-up-right">Software</h3>
+          {/* </div> */}
 
           {/* setup and equipment comes here */}
           <div className={styles.txtRvl2}  data-aos="fade-up-left"> 
               <h3 className={styles.explore}>💻Setup and Equipment💻</h3> 
-            <div className={styles.zeta2}>
+            <div className={styles.textdivs}>
                <h3 className={styles.zeta} data-aos="fade-up-left">PC SPECS</h3>
                <h3 className={styles.zeta} data-aos="fade-up">Processor: Intel Core i7-8700K 3.7 GHz (up to 4.7 GHz)</h3>
                <h3 className={styles.zeta} data-aos="fade-down-right">Operating System: Windows 10 64-bit</h3>

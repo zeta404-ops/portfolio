@@ -11,7 +11,7 @@ type CvProps = {
 const Cv: React.FC<CvProps> = () => {
 
   useEffect(() => {
-    AOS.init({duration: 1500});
+    AOS.init({ once: true, duration: 800, offset: 200, });
     },);
 
   return (
@@ -55,14 +55,25 @@ const Cv: React.FC<CvProps> = () => {
         Project management experience
     </h3>
     <h3 className={styles.graph} data-aos="fade-up">Proficiency with programming languages such as.</h3>
-    <h3 className={styles.codes} data-aos="fade-up">SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - TypeScript - JavaScript - ReactJs</h3>
-    <h3 className={styles.graph} data-aos="fade-up">Learning concepts and applying them to other problems.</h3>
-    <h3 className={styles.graph} data-aos="fade-up">Mathematical skills.</h3>
-    <h3 className={styles.graph} data-aos="fade-up">Problem-solving capability.</h3>
-    <h3 className={styles.graph} data-aos="fade-up">Communication skills.</h3>
-    <h3 className={styles.graph} data-aos="fade-up">Writing skills.</h3>
-    <h3 className={styles.graph} data-aos="fade-up">Inquisitiveness.</h3>
-    <h3 className={styles.graph} data-aos="fade-up">Self-motivation.</h3>
+    {/* <h3 className={styles.codes} data-aos="fade-up">SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - TypeScript - JavaScript - ReactJs</h3> */}
+    <h3 className={styles.zeta2} data-aos="fade-up-left">Node Sql</h3>
+                <h3 className={styles.zeta2} data-aos="fade-up-right">C#</h3>
+                <h3 className={styles.zeta2} data-aos="fade-up">Unity</h3>
+                <h3 className={styles.zeta2} data-aos="fade-down">React</h3>
+                <h3 className={styles.zeta2} data-aos="zoom-in">Java</h3>
+                <h3 className={styles.zeta2} data-aos="zoom-out">HTML</h3>
+                <h3 className={styles.zeta2} data-aos="fade-down">CSS</h3>
+                <h3 className={styles.zeta2} data-aos="fade-down-right">JAVASCRIPT</h3>
+                <h3 className={styles.zeta2} data-aos="zoom-in">Typescript</h3>
+                <h3 className={styles.zeta2} data-aos="zoom-out">ReactJS</h3>
+                <br></br>
+                <h3 className={styles.graph} data-aos="fade-up">Learning concepts and applying them to other problems.</h3>
+                <h3 className={styles.graph} data-aos="fade-up">Mathematical skills.</h3>
+                <h3 className={styles.graph} data-aos="fade-up">Problem-solving capability.</h3>
+                <h3 className={styles.graph} data-aos="fade-up">Communication skills.</h3>
+                <h3 className={styles.graph} data-aos="fade-up">Writing skills.</h3>
+                <h3 className={styles.graph} data-aos="fade-up">Inquisitiveness.</h3>
+                <h3 className={styles.graph} data-aos="fade-up">Self-motivation.</h3>
 
        <h3 className={styles.internship}  data-aos="fade-up">🎓Vesala Primary School, Ruudi Secondary School, internship🎓</h3>
        <h3 className={styles.graph} data-aos="fade-up" >12.08.2019 - 05.10.2019</h3>

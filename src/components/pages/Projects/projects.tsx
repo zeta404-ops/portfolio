@@ -11,7 +11,7 @@ type ProjectProps = {
 const Project: React.FC<ProjectProps> = () => {
 
   useEffect(() => {
-    AOS.init({duration: 1500});
+    AOS.init({ once: true, duration: 800, offset: 200, });
     },);
 
 

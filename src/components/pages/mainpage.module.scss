@@ -10,10 +10,10 @@
 
 }
 
-.nav{
-  font-weight: 700;
-  font-size: 25px;
-}
+// .nav{
+//   font-weight: 700;
+//   font-size: 25px;
+// }
   
 .zeta{
   margin: 15 0px;
@@ -78,35 +78,78 @@
   box-shadow: 0 0 11px #685894;
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+// @keyframes shake {
+//   0% { transform: translate(1px, 1px) rotate(0deg); }
+//   10% { transform: translate(-1px, -2px) rotate(-1deg); }
+//   20% { transform: translate(-3px, 0px) rotate(1deg); }
+//   30% { transform: translate(3px, 2px) rotate(0deg); }
+//   40% { transform: translate(1px, -1px) rotate(1deg); }
+//   50% { transform: translate(-1px, 2px) rotate(-1deg); }
+//   60% { transform: translate(-3px, 1px) rotate(0deg); }
+//   70% { transform: translate(3px, 1px) rotate(-1deg); }
+//   80% { transform: translate(-1px, -1px) rotate(1deg); }
+//   90% { transform: translate(1px, 2px) rotate(0deg); }
+//   100% { transform: translate(1px, -2px) rotate(-1deg); }
+// }
+
+
+// .explore1,.explore2{
+//   font-family: Trebuchet MS, sans-serif;
+//   font-weight: 700;
+//   font-size: 17px;
+//   color: white;
+//   background-image: linear-gradient(-20deg, #6e45e2 0%, #4d6d6b 100%);
+//   padding: 8px;
+//   margin: 40px;
+//   text-align: center;
+//   border-color: #685894;
+//   box-shadow: 0 0 11px #685894;
+//   border: none;
+//   border-radius: 25px;
+//   padding: 10px;
+// }
+
+//sql texts and others 
+.zeta2{
+  font-family: Trebuchet MS, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #100F0E;
+  margin: 30px;
+  text-align: center;
+  border: none;
+}
+
+.zeta2:hover{
+  background: linear-gradient(45deg, #6e45e2, #6e45e2, #437eb4, #6e45e2, #437eb4, #5a4399, #437eb4, #6e45e2, #6e45e2);
+  background-size: 400%;
+  font-size: 51px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowing 21s linear infinite;
+  transition: opacity .3s ease-in-out;
 }
 
 
-.explore1,.explore2{
-  font-family: Trebuchet MS, sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  color: white;
-  background-image: linear-gradient(-20deg, #6e45e2 0%, #4d6d6b 100%);
-  padding: 8px;
-  margin: 40px;
-  text-align: center;
-  border-color: #685894;
-  box-shadow: 0 0 11px #685894;
-  border: none;
-  border-radius: 25px;
-  padding: 10px;
+// .explore1:hover,.explore2:hover{
+//   background: linear-gradient(45deg, #6e45e2, #6e45e2, #437eb4, #6e45e2, #437eb4, #5a4399, #437eb4, #6e45e2, #6e45e2);
+//   background-size: 400%;
+//   animation: glowing 31s linear infinite;
+//   transition: opacity .3s ease-in-out;
+// }
+
+.contact:hover{
+
+  background: linear-gradient(45deg, #6e45e2, #6e45e2, #437eb4, #6e45e2, #437eb4, #5a4399, #437eb4, #6e45e2, #6e45e2);
+  background-size: 400%;
+  animation: glowing 21s linear infinite;
+  transition: opacity .3s ease-in-out;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
 @media screen and (max-width: 800px){
