@@ -22,12 +22,12 @@ const Footer: React.FC<FooterProps> = () => {
             {/* icons with reactbootstrap icons and linked */}
             <div className={styles.ico1}> 
             <a href="https://www.instagram.com/zhinar_0/" target="_blank" rel="noreferrer" >
-                <CgInstagram size={55} color="#ffffff"/> 
+                <CgInstagram size={55} className={styles.icon1} color="#ffffff"/> 
             </a>
             </div>
             <div className={styles.ico2}> 
             <a href="https://www.linkedin.com/in/zhinar/" target="_blank" rel="noreferrer" >
-                <AiOutlineLinkedin size={63} color="#ffffff"/> 
+                <AiOutlineLinkedin size={63} className={styles.icon2} color="#ffffff"/> 
             </a>
             </div>
             </div>

@@ -22,7 +22,18 @@
 }
 
 .ico1,.ico2{
-
     display: inline-flex;
-    
+}
+
+.ico2:hover{
+
+    a svg{
+        color: rgb(83, 83, 190) !important; 
+     }
+}
+
+.ico1:hover{
+    a svg{
+        color: rgb(83, 83, 190) !important; 
+     }  
 }
