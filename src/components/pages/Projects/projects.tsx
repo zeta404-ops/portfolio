@@ -57,7 +57,7 @@ const Project: React.FC<ProjectProps> = () => {
     </div> */}
       <a href="https://play.unity.com/u/zeta404ze" target="_blank" rel="noreferrer" data-aos="fade-up-right"><img className={styles.projects1} src="https://i.ibb.co/tMr906w/Official-unity-logo-copy.png" alt='unity profile'/></a>
       <a href="https://www.behance.net/zhinarM" target="_blank" rel="noreferrer" data-aos="fade-up-left"><img className={styles.projects1} src="https://i.ibb.co/kc52ZQk/behance1.png" alt='behance'/></a>
-      <a href="https://github.com/zeta404-ops/" target="_blank" rel="noreferrer" data-aos="fade-down-left"><img className={styles.projects1} src="https://i.ibb.co/233Gr3R/github.png" alt='github'/></a>
+      <a href="https://github.com/zeta404-ops/" target="_blank" rel="noreferrer" data-aos="fade-down-left"><img className={styles.projects1} src="https://i.ibb.co/233Gr3R/github.png" alt='github pic'/></a>
 
   </div>
 
