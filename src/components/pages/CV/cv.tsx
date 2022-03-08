@@ -95,7 +95,8 @@ const Cv: React.FC<CvProps> = () => {
        <h3 className={styles.graph} data-aos="fade-up">ADOBE PHOTOSHOP 2022</h3>
        <h3 className={styles.graph} data-aos="fade-up">PACKET TRACER</h3>
        <h3 className={styles.graph} data-aos="fade-up">VIRTUALBOX VM</h3>
-
+        <br></br>
+        <br></br>
 
   </div>
 
