@@ -13,7 +13,7 @@
 }
 .cancelbutton{
     min-width: 100px;
-    background: #8d8d8d;
+    background: #808080;
     border: none;
     color: white;
     align-items: center;
@@ -117,15 +117,27 @@
     
 }
 
+.contactPicDiv{
+    align-items: center;
+    text-align: center;
+
+}
+
+.contactPic{
+    width: 140px;
+}
 @media screen and (max-width: 800px){
 
         .modalmessagelabelarea, .modalemaillabelarea, .textinputlabelarea{
          width: 190px;
          text-align: center;
         }
+        .cancelbutton{
+         font-size: 13px;
+        }
 
         .aftersentmsg{
-
+            
             font-size: 32px;
             
             input{

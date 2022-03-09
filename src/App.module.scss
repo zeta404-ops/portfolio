@@ -21,9 +21,26 @@
     margin: 10px;
   }
 
+  .navPicDiv{
+    position: absolute;
+    
+    left: 10px;
+    top: -16.4px;
+  }
+
+  .navPic{
+    width: 90px;
+  }
 .nav a:hover{
    opacity: 0.6;
    color: white;
   }
 
-  
+  @media screen and (max-width: 800px){
+    .navPicDiv{
+      position: absolute;
+      left: -20px;
+      top: -16.4px;
+    }
+  }
+

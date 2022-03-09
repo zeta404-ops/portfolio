@@ -54,6 +54,7 @@ const App: React.FC = () => {
     
     
     <div className={styles.nav}>
+      <div className={styles.navPicDiv}><a href="https://akazeta404portfolio.web.app/"><img className={styles.navPic} src="https://i.ibb.co/rH21x6K/email.png" alt="nav pic" /></a></div>
       <Link to="/">Home</Link>
       <Link to="/cv">CV</Link>
       <Link to="/projects">PROJECTS</Link>

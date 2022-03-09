@@ -83,6 +83,8 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
     >
         
         <div className={styles.modaltitle}> <h4 >Contact Us</h4></div>
+        <div className={styles.contactPicDiv}><img className={styles.contactPic} src="https://i.ibb.co/rH21x6K/email.png" alt="nav pic" /></div>
+
 
         {/* inputs for name */}
         <div className={styles.textinput}> 
