@@ -1,29 +1,49 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ErrorPage from '../src/components/extra/ErrorPage';
 import MainPage from './components/pages/mainPage';
-import cv from './components/pages/CV/cv'
-import styles from './App.module.scss'
-import Project from './components/pages/Projects/projects'
-import * as ReactBootStrap from "react-bootstrap"
+import cv from './components/pages/CV/cv';
+import styles from './App.module.scss';
+import Project from './components/pages/Projects/projects';
 
 import {
-  BrowserRouter as Router,
   Switch,
-  Route} from 'react-router-dom';
+  useHistory,
+  Route,
+  Link} from 'react-router-dom';
 import Banner from './components/banner/banner';
 import Contact from './components/pages/ContactForm/contact';
 import Footer from './components/pages/Footer/footer';
 import Policy from '../src/components/pages/Privacypolicy/privacypolicy'
 import Terms from '../src/components/pages/Termsandconditions/termsandconditions'
 import admin from '../src/components/pages/AdminP/admin'
+import { logEvent } from 'firebase/analytics';
+import FirebaseServices from './firebase/firebaseServices';
 
 const App: React.FC = () => {
 
   const [contactformIsOpen, setContactformIsOpen] = useState<boolean>(false);
+  const history = useHistory();
+
+  useEffect(() => {
+    const pingAnalytics = () => {
+      const analyticsInstance = FirebaseServices.getGAInstance();
+      logEvent(analyticsInstance, "page_view", {
+        page_path: window.location.pathname,
+      });
+    }
+
+    console.log('Analytics initialized');
+    pingAnalytics();
+
+    return history.listen(location => {
+      console.log('HISTORY UPDATE!');
+      pingAnalytics();
+    });
+  }, [history]);
 
   return (
 
-   <Router basename='/portfolio'>
+   <>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -34,15 +54,9 @@ const App: React.FC = () => {
     
     
     <div className={styles.nav}>
-      <ReactBootStrap.Navbar >
-        <ReactBootStrap.Container >
-          <ReactBootStrap.Nav> 
-          <ReactBootStrap.Nav.Link href='/'>Home</ReactBootStrap.Nav.Link>
-          <ReactBootStrap.Nav.Link href='/cv'>CV</ReactBootStrap.Nav.Link>
-          <ReactBootStrap.Nav.Link href='/projects'>Projects</ReactBootStrap.Nav.Link>
-        </ReactBootStrap.Nav>
-        </ReactBootStrap.Container>
-      </ReactBootStrap.Navbar>
+      <Link to="/">Home</Link>
+      <Link to="/cv">CV</Link>
+      <Link to="/projects">PROJECTS</Link>
     </div>
 
     <Contact setModalIsOpen={setContactformIsOpen} openState={contactformIsOpen}/>
@@ -65,7 +79,7 @@ const App: React.FC = () => {
 
    {/* The footer and other components you want to display on all pages come here */}
    <Footer/>
- </Router>
+ </>
   )
 }
 
