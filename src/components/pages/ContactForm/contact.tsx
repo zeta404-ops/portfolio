@@ -43,6 +43,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
            msg: message,
            to: "akazeta404@gmail.com",
            date: new Date().getTime(),
+        
            
        })
        
