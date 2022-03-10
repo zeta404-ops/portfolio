@@ -23,16 +23,17 @@ const Cv: React.FC<CvProps> = () => {
   </div>
 
 
-    <h3 className={styles.zeta} data-aos="zoom-out-down">🌐Click at the icons to visit official badge issuer site🌐</h3>
+    {/* <h3 className={styles.zeta} data-aos="zoom-out-down">🌐Click at the icons to visit official badge issuer site🌐</h3> */}
 
-    <div className={styles.credly}> 
+    {/* <div className={styles.credly}>  */}
       
       {/* links to my badges */}
-      <a className={styles.badge1}  data-aos="fade-right" href="https://www.credly.com/badges/19303848-984e-498d-8015-50b56bc24cab/public_url" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/16bf6pK/cybersecurity-essentials.png" alt='cyber ess badge'/></a>
-      <a className={styles.badge2}  data-aos="fade-up" href="https://www.credly.com/badges/836d77f9-b428-441a-8d92-13fa8b5a0f26/public_url" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/RpSSWGZ/introduction-to-cybersecurity.png" alt='cyber intro badge'/></a>
-      <a className={styles.badge3}  data-aos="fade-down" href="https://www.credly.com/badges/2e122d42-14f5-4b9e-bd49-fd79990c1841/public_url" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/TtdJZSx/introduction-to-iot.png" alt='intro IOT badge'/></a>
-      <a className={styles.badge4}  data-aos="fade-left" href="https://www.credly.com/badges/ab6bb0c7-b6b7-4e58-842f-7cd877545085/public_url" target="_blank" rel="noreferrer" ><img src="https://i.ibb.co/nwfPT5x/pkttracer.png" alt='PACKET TRACER badge'/></a>
-    </div>
+      {/* <a className={styles.badge1}  data-aos="fade-right" href="https://www.credly.com/badges/19303848-984e-498d-8015-50b56bc24cab/public_url" target="_blank" rel="noreferrer" ><img className={styles.img1}  src="https://i.ibb.co/16bf6pK/cybersecurity-essentials.png" alt='cyber ess badge'/></a>
+      <a className={styles.badge2}  data-aos="fade-up" href="https://www.credly.com/badges/836d77f9-b428-441a-8d92-13fa8b5a0f26/public_url" target="_blank" rel="noreferrer" ><img  className={styles.img1} src="https://i.ibb.co/RpSSWGZ/introduction-to-cybersecurity.png" alt='cyber intro badge'/></a>
+      <a className={styles.badge3}  data-aos="fade-down" href="https://www.credly.com/badges/2e122d42-14f5-4b9e-bd49-fd79990c1841/public_url" target="_blank" rel="noreferrer" ><img  className={styles.img1} src="https://i.ibb.co/TtdJZSx/introduction-to-iot.png" alt='intro IOT badge'/></a>
+      <a className={styles.badge4}  data-aos="fade-left" href="https://www.credly.com/badges/ab6bb0c7-b6b7-4e58-842f-7cd877545085/public_url" target="_blank" rel="noreferrer" ><img className={styles.img1} src="https://i.ibb.co/nwfPT5x/pkttracer.png" alt='PACKET TRACER badge'/></a> */}
+    {/* </div> */}
+
 
     <div className={styles.downloadDiv} data-aos="zoom-out-right">
     <a className={styles.downloadbutton} href="https://docdro.id/iqmqP32" target="_blank" rel="noreferrer" ><h3 className={styles.zetaDownload}>CLICK HERE TO DOWNLOAD ALL OF MY CISCO CERTIFICATIONS</h3></a>
@@ -56,7 +57,9 @@ const Cv: React.FC<CvProps> = () => {
     </h3>
     <h3 className={styles.graph} data-aos="fade-up">Proficiency with programming languages such as.</h3>
     {/* <h3 className={styles.codes} data-aos="fade-up">SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - TypeScript - JavaScript - ReactJs</h3> */}
-    <h3 className={styles.zeta2} data-aos="fade-up-left">Node Sql</h3>
+
+                {/*
+                <h3 className={styles.zeta2} data-aos="fade-up-left">Node Sql</h3> 
                 <h3 className={styles.zeta2} data-aos="fade-up-right">C#</h3>
                 <h3 className={styles.zeta2} data-aos="fade-up">Unity</h3>
                 <h3 className={styles.zeta2} data-aos="fade-down">React</h3>
@@ -65,7 +68,140 @@ const Cv: React.FC<CvProps> = () => {
                 <h3 className={styles.zeta2} data-aos="fade-down">CSS</h3>
                 <h3 className={styles.zeta2} data-aos="fade-down-right">JAVASCRIPT</h3>
                 <h3 className={styles.zeta2} data-aos="zoom-in">Typescript</h3>
-                <h3 className={styles.zeta2} data-aos="zoom-out">ReactJS</h3>
+                <h3 className={styles.zeta2} data-aos="zoom-out">ReactJS</h3> */}
+                <div className={styles.row}>
+
+             
+                <a href="https://aws.amazon.com" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws">
+                </img></a>
+
+                <a href="https://www.blender.org/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender">
+                </img></a>
+
+
+                <a href="https://www.w3schools.com/cs/index.php" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="cs">
+                </img></a>
+
+
+                <a href="https://www.w3schools.com/css/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css">
+                </img></a>
+
+
+                <a href="https://firebase.google.com/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://camo.githubusercontent.com/dd4b2422ed3bfc9da88c43d18550375c66f9584327dff7ecc19315ce50b96f07/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f66697265626173652f66697265626173652d69636f6e2e737667" alt="firebase">
+                </img></a>
+
+
+                <a href="https://git-scm.com/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667" alt="git">
+                </img></a>
+
+
+                <a href="https://www.w3.org/html/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html">
+                </img></a>
+
+
+                <a href="https://www.java.com/en/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java">
+                </img></a>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="js">
+                </img></a>
+                  
+                <a href="https://www.linux.org/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux">
+                </img></a>
+                  <br></br>
+                <a href="https://www.mongodb.com/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongoDB">
+                </img></a>
+
+                <a href="https://www.mysql.com/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mySQL">
+                </img></a>
+
+                <a href="https://nodejs.org/en/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="NodeJS">
+                </img></a>
+
+                <a href="https://www.photoshop.com/en" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="PS">
+                </img></a>
+
+                <a href="https://www.python.org/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="PYTHON">
+                </img></a>
+
+
+                <a href="https://reactjs.org/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React">
+                </img></a>
+
+                <a href="https://reactnative.dev/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://camo.githubusercontent.com/5c92eeb467fd5d2b1ef1c560e3c3c2f758a8d4e03a8136bda7b41a2d3d4a1b59/68747470733a2f2f72656163746e61746976652e6465762f696d672f6865616465725f6c6f676f2e737667" alt="ReactNative">
+                </img></a>
+
+                <a href="https://sass-lang.com/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass">
+                </img></a>
+
+
+
+                <a href="https://www.typescriptlang.org/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TS">
+                </img></a>
+
+
+                <a href="https://unity.com/" rel="noreferr">
+                <img data-aos="fade-down"
+                className={styles.awsPic}
+                src="https://camo.githubusercontent.com/f8f5c4f90fe3c43e5b7858360cf3a4eeffcaa0bdf7352c7c8c4b9c1489bb7f99/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f756e69747933642f756e69747933642d69636f6e2e737667" alt="Unity">
+                </img></a>
+                </div>
                 <br></br>
                 <h3 className={styles.graph} data-aos="fade-up">Learning concepts and applying them to other problems.</h3>
                 <h3 className={styles.graph} data-aos="fade-up">Mathematical skills.</h3>

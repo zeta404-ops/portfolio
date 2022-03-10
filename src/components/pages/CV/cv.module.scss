@@ -3,8 +3,8 @@
   display: none;
 }
 
+
 .container {
-  
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
 {
   font-family: Trebuchet MS, sans-serif;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 28px;
   color: white;
   background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
   padding: 8px;
@@ -27,7 +27,7 @@
   }
 
   .zetaDownload{
-    font-family: Trebuchet MS, sans-serif;
+  font-family: Trebuchet MS, sans-serif;
   font-weight: 700;
   font-size: 25px;
   color: white;
@@ -70,16 +70,35 @@
     cursor: pointer;
     text-align: center;
     border-radius: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
-  .badge1,.badge2,.badge3,.badge4{
-    width: 20%;
-    height: 30%;
-  }
+  // .img1,.img2,.img3,.img4{
 
-  img{
-    width: 60%;
-    height: 60%;
+  // }
+  
+  // .credly::after {
+  //   // content: "";
+  //   // clear: both;
+  //   // display: table;
+  //   display: flex;
+  // }
+
+  // img{
+  //   width: 60%;
+  //   height: 60%;
+  // }
+
+  .awsPic{
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   .downloadDiv:hover{
@@ -176,13 +195,12 @@ img:hover::before {
 }
 
 @media screen and (max-width: 800px){
-
-  .graph,.zeta2{
-    margin-bottom: 1px;
+  
+.row{
+    width: 200px;
   }
   img{
-    min-width: 90px;
+    width: 60%;
+    height: 60%;
   }
-
-
 }
