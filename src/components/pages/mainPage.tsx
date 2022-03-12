@@ -65,9 +65,9 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
                 <h3 className={styles.zeta2} data-aos="fade-down-right">JAVASCRIPT</h3>
                 <h3 className={styles.zeta2} data-aos="zoom-in">Typescript</h3>
                 <h3 className={styles.zeta2} data-aos="zoom-out">ReactJS</h3> */}
+
               <div className={styles.row}>
 
-             
               <a href="https://aws.amazon.com" rel="noreferr">
               <img data-aos="fade-down"
               className={styles.awsPic}
@@ -80,13 +80,11 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
                src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender">
               </img></a>
               
-
               <a href="https://www.w3schools.com/cs/index.php" rel="noreferr">
               <img data-aos="fade-down"
               className={styles.awsPic}
                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="cs">
               </img></a>
-
 
               <a href="https://www.w3schools.com/css/" rel="noreferr">
               <img data-aos="fade-down"
@@ -94,13 +92,11 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css">
               </img></a>
 
-
               <a href="https://firebase.google.com/" rel="noreferr">
               <img data-aos="fade-down"
               className={styles.awsPic}
                src="https://camo.githubusercontent.com/dd4b2422ed3bfc9da88c43d18550375c66f9584327dff7ecc19315ce50b96f07/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f66697265626173652f66697265626173652d69636f6e2e737667" alt="firebase">
               </img></a>
-
 
               <a href="https://git-scm.com/" rel="noreferr">
               <img data-aos="fade-down"
@@ -108,13 +104,11 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
                src="https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667" alt="git">
               </img></a>
 
-
               <a href="https://www.w3.org/html/" rel="noreferr">
               <img data-aos="fade-down"
               className={styles.awsPic}
               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html">
               </img></a>
-
 
               <a href="https://www.java.com/en/" rel="noreferr">
               <img data-aos="fade-down"
@@ -133,6 +127,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
               className={styles.awsPic}
                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux">
               </img></a>
+
                 <br></br>
               <a href="https://www.mongodb.com/" rel="noreferr">
               <img data-aos="fade-down"
@@ -163,7 +158,6 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
               className={styles.awsPic}
                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="PYTHON">
               </img></a>
-
               
               <a href="https://reactjs.org/" rel="noreferr">
               <img data-aos="fade-down"
@@ -183,15 +177,12 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass">
               </img></a>
 
-              
-
               <a href="https://www.typescriptlang.org/" rel="noreferr">
               <img data-aos="fade-down"
               className={styles.awsPic}
                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TS">
               </img></a>
 
-            
               <a href="https://unity.com/" rel="noreferr">
               <img data-aos="fade-down"
               className={styles.awsPic}
@@ -202,6 +193,38 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
                 <h3 className={styles.zeta} data-aos="fade-up-left"> You can ask me about ...</h3>
 
                 {/* <h3 className={styles.explore2} data-aos="fade-up-right">Technology, CyberSecurity, Hardware, Software</h3> */}
+
+                <div className={styles.row3}>
+
+              <a href="https://www.ibm.com/topics/cybersecurity" rel="noreferr">
+              <img data-aos="fade-down"
+              className={styles.awsPic}
+               src="https://www.svgrepo.com/show/304315/phone-shield.svg" alt="phone shield">
+              </img></a>
+
+              {/* <a href="https://visualstudio.microsoft.com/downloads/" rel="noreferr">
+              <img data-aos="fade-down"
+              className={styles.awsPic}
+               src="https://www.svgrepo.com/show/228666/technological.svg" alt="vs2019">
+              </img></a>
+
+
+              <a href="https://visualstudio.microsoft.com/downloads/" rel="noreferr">
+              <img data-aos="fade-down"
+              className={styles.awsPic}
+               src="https://www.svgrepo.com/show/302643/processor.svg" alt="vs2019">
+              </img></a>
+
+
+              <a href="https://visualstudio.microsoft.com/downloads/" rel="noreferr">
+              <img data-aos="fade-down"
+              className={styles.awsPic}
+               src="https://www.svgrepo.com/show/179551/monitor-technology.svg" alt="vs2019">
+              </img></a> */}
+
+
+
+              </div>
                 <h3 className={styles.zeta2} data-aos="zoom-in">Technology</h3>
                 <h3 className={styles.zeta2} data-aos="fade-down">CyberSecurity</h3>
                 <h3 className={styles.zeta2} data-aos="zoom-out">Hardware</h3>
@@ -225,11 +248,43 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
             <div className={styles.txtRvl3}> 
                 <h3 className={styles.explore} data-aos="fade-up">🔸IDE🔸</h3>
               <div className={styles.zeta3}>
-                <h3 className={styles.zeta} data-aos="fade-up">VISUAL STUDIO CODE</h3>
+
+              <div className={styles.row2}>
+
+
+
+              <a href="https://visualstudio.microsoft.com/downloads/" rel="noreferr">
+              <img data-aos="fade-down"
+              className={styles.awsPic}
+               src="https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg" alt="vs2019">
+              </img></a>
+
+              
+              <a href="https://www.jetbrains.com/idea/" rel="noreferr">
+              <img data-aos="fade-down"
+              className={styles.awsPic}
+               src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IntelliJ_IDEA_Icon.svg" alt="IntelliJ">
+              </img></a>
+
+              
+              <a href="https://netbeans.apache.org/download/nb120/nb120.html" rel="noreferr">
+              <img data-aos="fade-down"
+              className={styles.awsPic}
+               src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Apache">
+              </img></a>
+
+              <a href="https://code.visualstudio.com/" rel="noreferr">
+              <img data-aos="fade-down"
+              className={styles.awsPic}
+               src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="vsCode">
+              </img></a>
+
+              </div>
+                {/* <h3 className={styles.zeta} data-aos="fade-up">VISUAL STUDIO CODE</h3>
                 <h3 className={styles.zeta} data-aos="fade-up-right">Visual Studio 2019</h3>
                 <h3 className={styles.zeta} data-aos="fade-down">IntteliJ IDEA Community Edition</h3>
                 <h3 className={styles.zeta} data-aos="fade-up">Apache NetBeans IDE 12.0</h3>
-               
+                */}
               </div>
             </div>
 

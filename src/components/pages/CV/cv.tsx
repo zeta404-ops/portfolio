@@ -219,7 +219,82 @@ const Cv: React.FC<CvProps> = () => {
        </h3>
 
        <h3 className={styles.internship}  data-aos="fade-up">📱Good knowledge in these programs and editors📱</h3>
-       <h3 className={styles.graph}  data-aos="fade-up">LUMION 8</h3>
+
+         <div className={styles.row}>
+          <a href="https://github.com/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://img.icons8.com/nolan/344/github.png" alt="github">
+          </img></a>
+
+          <a href="https://lumion.com/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic1}
+          src="https://logodix.com/logo/1995865.png" alt="lumion">
+          </img></a>
+
+          <a href="https://www.blender.org/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Blender.svg" alt="blender">
+          </img></a>
+
+          <a href="https://unity.com/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://upload.wikimedia.org/wikipedia/commons/archive/1/19/20210922191318%21Unity_Technologies_logo.svg" alt="unity">
+          </img></a>
+
+          <a href="https://www.audacityteam.org/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Audacity_Logo.svg" alt="audacity">
+          </img></a>
+
+          <a href="https://filezilla-project.org/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://upload.wikimedia.org/wikipedia/commons/0/01/FileZilla_logo.svg" alt="FileZilla">
+          </img></a>
+                          
+          <a href="https://obsproject.com/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d3/OBS_Studio_Logo.svg" alt="OBS">
+          </img></a>
+
+          <a href="https://wordpress.org/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg" alt="WORDPRESS">
+          </img></a>
+
+          <a href="https://www.gimp.org/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://upload.wikimedia.org/wikipedia/commons/4/45/The_GIMP_icon_-_gnome.svg" alt="GIMP">
+          </img></a>
+
+          <a href="https://www.adobe.com/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="PS2022">
+          </img></a>
+
+          <a href="https://www.virtualbox.org/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png" alt="ORACLEVM">
+          </img></a>
+
+          <a href="https://www.microsoft.com/" rel="noreferr">
+          <img data-aos="fade-down"
+          className={styles.awsPic}
+          src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="MS">
+          </img></a>
+        </div>
+
+       {/* <h3 className={styles.graph}  data-aos="fade-up">LUMION 8</h3>
        <h3 className={styles.graph} data-aos="fade-up">BLENDER</h3>
        <h3 className={styles.graph} data-aos="fade-up">UNITY</h3>
        <h3 className={styles.graph} data-aos="fade-up">GITHUB</h3>
@@ -232,7 +307,7 @@ const Cv: React.FC<CvProps> = () => {
        <h3 className={styles.graph} data-aos="fade-up">PACKET TRACER</h3>
        <h3 className={styles.graph} data-aos="fade-up">VIRTUALBOX VM</h3>
         <br></br>
-        <br></br>
+        <br></br> */}
 
   </div>
 

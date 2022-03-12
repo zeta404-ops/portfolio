@@ -152,6 +152,13 @@
  
 }
 
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+
 .contact:hover{
 
   background: linear-gradient(45deg, #6e45e2, #6e45e2, #437eb4, #6e45e2, #437eb4, #5a4399, #437eb4, #6e45e2, #6e45e2);
