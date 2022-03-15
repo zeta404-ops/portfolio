@@ -70,7 +70,7 @@ const Contact: React.FC<ContactProps> = ({setModalIsOpen, openState }) => {
 
     <Popup 
         // ref={}
-        className={styles.container}
+        className={styles.containerDiv}
         open={openState}
         closeOnDocumentClick={false}
         modal
