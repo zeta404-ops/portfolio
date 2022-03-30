@@ -18,7 +18,6 @@ import Terms from '../src/components/pages/Termsandconditions/termsandconditions
 import admin from '../src/components/pages/AdminP/admin'
 import { logEvent } from 'firebase/analytics';
 import FirebaseServices from './firebase/firebaseServices';
-import Livechat from './components/LiveChat/Livechat';
 
 const App: React.FC = () => {
 
@@ -75,7 +74,6 @@ const App: React.FC = () => {
      <Route exact path='/terms' component={Terms}/>
      <Route exact path='/banner' component={Banner}/>
      <Route exact path='/contact' component={Contact}/>
-     <Route exact path='/livechat' component={Livechat}/>
      <Route exact path='/cv' component={cv} />
      <Route component={ErrorPage} />
    </Switch>
