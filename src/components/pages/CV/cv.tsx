@@ -22,6 +22,9 @@ const Cv: React.FC<CvProps> = () => {
   <Banner text='Curriculum Vitae' text2='Insightful IT manager with history of beating deadlines.'  className={styles.pic}/> 
   </div>
 
+  <div className={styles.navPicDiv}><a href="#/"><img className={styles.navPic} src="https://i.ibb.co/Kjj7Fmv/ZETAIMG-modified.png" alt="nav pic" /></a></div>
+  <h3 className={styles.zet2a} data-aos="zoom-out-down" >Zhinar Masood</h3>
+  <h3 className={styles.zet3a} data-aos="zoom-out-down" >ICT Student & future programmer</h3>
 
     {/* <h3 className={styles.zeta} data-aos="zoom-out-down">🌐Click at the icons to visit official badge issuer site🌐</h3> */}
 

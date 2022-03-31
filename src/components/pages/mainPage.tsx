@@ -41,9 +41,9 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
 
      <div className={styles.zeta}>
       {/* <img className={styles.zetaimg} src="https://i.ibb.co/nRjFWrg/zetaa.jpg" alt='zeta'/> */}
-       <h3 className={styles.zeta} data-aos="zoom-in">Hello! Welcome to my portfolio profile.</h3>
-       <h3 className={styles.zeta} data-aos="fade-up-right"> I am Zhinar.</h3>
-       <h3 className={styles.zeta} data-aos="fade-up-left">I study information and communication technology and I'm excited about programming and cyber security.</h3>
+       <h3 className={styles.zeta} data-aos="fade-down">Hello! Welcome to my portfolio profile.</h3>
+       <h3 className={styles.zeta} data-aos="fade-down"> I am Zhinar.</h3>
+       <h3 className={styles.zeta} data-aos="fade-down">I study information and communication technology and I'm excited about programming and cyber security.</h3>
       </div>
 
           {/* about me div */}
@@ -51,8 +51,8 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
           
           {/* <div className={styles.txtRvl1}>  */}
           
-                <h3 className={styles.explore} data-aos="fade-up-right">😃ABOUT ME😃</h3>
-                <h3 className={styles.zeta} data-aos="fade-up-left">Languages and Tools:</h3>
+                <h3 className={styles.explore} data-aos="fade-down">😃ABOUT ME😃</h3>
+                <h3 className={styles.zeta} data-aos="fade-down">Languages and Tools:</h3>
                 
                 {/* <h3 className={styles.explore1} data-aos="fade-up-right">SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript</h3> */}
                 {/* <h3 className={styles.zeta2} data-aos="fade-up-left">Node Sql</h3>
@@ -189,8 +189,8 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
                src="https://camo.githubusercontent.com/f8f5c4f90fe3c43e5b7858360cf3a4eeffcaa0bdf7352c7c8c4b9c1489bb7f99/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f756e69747933642f756e69747933642d69636f6e2e737667" alt="Unity">
               </img></a>
               </div>
-                <h3 className={styles.zeta} data-aos="fade-up-left">I'm looking to collaborate on making a Gameproject</h3>
-                <h3 className={styles.zeta} data-aos="fade-up-left"> You can ask me about ...</h3>
+                <h3 className={styles.zeta} data-aos="fade-down">I'm looking to collaborate on making a Gameproject</h3>
+                <h3 className={styles.zeta} data-aos="fade-down"> You can ask me about ...</h3>
 
                 {/* <h3 className={styles.explore2} data-aos="fade-up-right">Technology, CyberSecurity, Hardware, Software</h3> */}
 
@@ -232,21 +232,21 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
           {/* </div> */}
 
           {/* setup and equipment comes here */}
-          <div className={styles.txtRvl2}  data-aos="fade-up-left"> 
+          <div className={styles.txtRvl2}  data-aos="fade-down"> 
               <h3 className={styles.explore}>💻Setup and Equipment💻</h3> 
             <div className={styles.textdivs}>
-               <h3 className={styles.zeta} data-aos="fade-up-left">PC SPECS</h3>
-               <h3 className={styles.zeta} data-aos="fade-up">Processor: Intel Core i7-8700K 3.7 GHz (up to 4.7 GHz)</h3>
-               <h3 className={styles.zeta} data-aos="fade-down-right">Operating System: Windows 10 64-bit</h3>
-               <h3 className={styles.zeta} data-aos="fade-right">Central memory: 32GB DDR4</h3>
-               <h3 className={styles.zeta} data-aos="fade-up-right">Graphics Card: NVIDIA GeForce GTX 1080TI 8GB</h3>
-               <h3 className={styles.zeta} data-aos="fade-up-left">Hard drive: 256GB m.2 SSD + 3TB HDD</h3>
+               <h3 className={styles.zeta} data-aos="fade-down">PC SPECS</h3>
+               <h3 className={styles.zeta} data-aos="fade-down">Processor: Intel Core i7-8700K 3.7 GHz (up to 4.7 GHz)</h3>
+               <h3 className={styles.zeta} data-aos="fade-down">Operating System: Windows 10 64-bit</h3>
+               <h3 className={styles.zeta} data-aos="fade-down">Central memory: 32GB DDR4</h3>
+               <h3 className={styles.zeta} data-aos="fade-down">Graphics Card: NVIDIA GeForce GTX 1080TI 8GB</h3>
+               <h3 className={styles.zeta} data-aos="fade-down">Hard drive: 256GB m.2 SSD + 3TB HDD</h3>
             </div>
           </div>
 
           {/* my ide's comes here */}
             <div className={styles.txtRvl3}> 
-                <h3 className={styles.explore} data-aos="fade-up">🔸IDE🔸</h3>
+                <h3 className={styles.explore} data-aos="fade-down">🔸IDE🔸</h3>
               <div className={styles.zeta3}>
 
               <div className={styles.row2}>
@@ -297,7 +297,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
 
         {/* contact me button */}
         <button   
-          data-aos="slide-up"
+          data-aos="fade-down"
           className={styles.contact}
           disabled={!buttonActive}
           onClick={(e) => {
