@@ -202,6 +202,15 @@ img:hover::before {
   }
 }
 
+.zetaPic{
+    width: 300px;
+    height: 300px;
+}
+.zetaPicp{
+  width: 300px;
+  height: 300px;
+}
+
 @media screen and (max-width: 800px){
   
 .row{
@@ -212,3 +221,13 @@ img:hover::before {
     height: 60%;
   }
 }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  .row{
+  width: 400px;
+}}
+
+

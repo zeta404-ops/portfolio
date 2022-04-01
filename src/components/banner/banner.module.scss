@@ -11,7 +11,6 @@
     align-items: center;
     text-align: center;  
     background-image: linear-gradient(-2320deg, #6e45e2 0%, #88d3ce 100%);
-   
 }
 
 .textcss{
@@ -47,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 800px){
 
     .textcss{
         left: 18%;
@@ -60,4 +59,20 @@
       font-size: 30px;
     }
   }
+
+  @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  .textcss{
+    left: 36%;
+    top: 15%;
+    font-size: 35px;
+}
+.textcss2{
+    top: 21%;
+  width: 40%;
+  font-size: 30px;
+}
+}
   

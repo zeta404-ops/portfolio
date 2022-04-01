@@ -4,7 +4,9 @@ import styles from './mainpage.module.scss'
 import Banner from '../banner/banner';
 import Contact from './ContactForm/contact';
 import AOS from 'aos';
+import { cardData } from '../cards/techCardData'
 import 'aos/dist/aos.css';
+import TechCard from '../cards/techCard';
 
 
 type MainPageProps = {
@@ -54,140 +56,11 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
                 <h3 className={styles.explore} data-aos="fade-down">😃ABOUT ME😃</h3>
                 <h3 className={styles.zeta} data-aos="fade-down">Languages and Tools:</h3>
                 
-                {/* <h3 className={styles.explore1} data-aos="fade-up-right">SQL - Node Sql - C# - Unity - React - Java - HTML - CSS - JAVASCRIPT - Typescript</h3> */}
-                {/* <h3 className={styles.zeta2} data-aos="fade-up-left">Node Sql</h3>
-                <h3 className={styles.zeta2} data-aos="fade-up-right">C#</h3>
-                <h3 className={styles.zeta2} data-aos="fade-up">Unity</h3>
-                <h3 className={styles.zeta2} data-aos="fade-down">React</h3>
-                <h3 className={styles.zeta2} data-aos="zoom-in">Java</h3>
-                <h3 className={styles.zeta2} data-aos="zoom-out">HTML</h3>
-                <h3 className={styles.zeta2} data-aos="fade-down">CSS</h3>
-                <h3 className={styles.zeta2} data-aos="fade-down-right">JAVASCRIPT</h3>
-                <h3 className={styles.zeta2} data-aos="zoom-in">Typescript</h3>
-                <h3 className={styles.zeta2} data-aos="zoom-out">ReactJS</h3> */}
-
               <div className={styles.row}>
+                {
+                  cardData.map(x => <TechCard key={x.key} className={styles.awsPic} techData={x} /> )
+                }
 
-              <a href="https://aws.amazon.com" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws">
-              </img></a>
-
-              <a href="https://www.blender.org/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender">
-              </img></a>
-              
-              <a href="https://www.w3schools.com/cs/index.php" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="cs">
-              </img></a>
-
-              <a href="https://www.w3schools.com/css/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css">
-              </img></a>
-
-              <a href="https://firebase.google.com/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://camo.githubusercontent.com/dd4b2422ed3bfc9da88c43d18550375c66f9584327dff7ecc19315ce50b96f07/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f66697265626173652f66697265626173652d69636f6e2e737667" alt="firebase">
-              </img></a>
-
-              <a href="https://git-scm.com/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://camo.githubusercontent.com/fbfcb9e3dc648adc93bef37c718db16c52f617ad055a26de6dc3c21865c3321d/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6769742d73636d2f6769742d73636d2d69636f6e2e737667" alt="git">
-              </img></a>
-
-              <a href="https://www.w3.org/html/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html">
-              </img></a>
-
-              <a href="https://www.java.com/en/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java">
-              </img></a>
-
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="js">
-              </img></a>
-                
-              <a href="https://www.linux.org/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux">
-              </img></a>
-
-                <br></br>
-              <a href="https://www.mongodb.com/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongoDB">
-              </img></a>
-
-              <a href="https://www.mysql.com/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mySQL">
-              </img></a>
-
-              <a href="https://nodejs.org/en/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="NodeJS">
-              </img></a>
-
-              <a href="https://www.photoshop.com/en" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="PS">
-              </img></a>
-
-              <a href="https://www.python.org/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="PYTHON">
-              </img></a>
-              
-              <a href="https://reactjs.org/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="React">
-              </img></a>
-
-              <a href="https://reactnative.dev/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://camo.githubusercontent.com/5c92eeb467fd5d2b1ef1c560e3c3c2f758a8d4e03a8136bda7b41a2d3d4a1b59/68747470733a2f2f72656163746e61746976652e6465762f696d672f6865616465725f6c6f676f2e737667" alt="ReactNative">
-              </img></a>
-
-              <a href="https://sass-lang.com/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass">
-              </img></a>
-
-              <a href="https://www.typescriptlang.org/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="TS">
-              </img></a>
-
-              <a href="https://unity.com/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://camo.githubusercontent.com/f8f5c4f90fe3c43e5b7858360cf3a4eeffcaa0bdf7352c7c8c4b9c1489bb7f99/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f756e69747933642f756e69747933642d69636f6e2e737667" alt="Unity">
-              </img></a>
               </div>
                 <h3 className={styles.zeta} data-aos="fade-down">I'm looking to collaborate on making a Gameproject</h3>
                 <h3 className={styles.zeta} data-aos="fade-down"> You can ask me about ...</h3>
@@ -202,27 +75,7 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
                src="https://www.svgrepo.com/show/304315/phone-shield.svg" alt="phone shield">
               </img></a>
 
-              {/* <a href="https://visualstudio.microsoft.com/downloads/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://www.svgrepo.com/show/228666/technological.svg" alt="vs2019">
-              </img></a>
-
-
-              <a href="https://visualstudio.microsoft.com/downloads/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://www.svgrepo.com/show/302643/processor.svg" alt="vs2019">
-              </img></a>
-
-
-              <a href="https://visualstudio.microsoft.com/downloads/" rel="noreferr">
-              <img data-aos="fade-down"
-              className={styles.awsPic}
-               src="https://www.svgrepo.com/show/179551/monitor-technology.svg" alt="vs2019">
-              </img></a> */}
-
-
+              
 
               </div>
                 <h3 className={styles.zeta2} data-aos="zoom-in">Technology</h3>
@@ -280,11 +133,6 @@ const MainPage: React.FC<MainPageProps> = ({ contactFormState, setContactformSta
               </img></a>
 
               </div>
-                {/* <h3 className={styles.zeta} data-aos="fade-up">VISUAL STUDIO CODE</h3>
-                <h3 className={styles.zeta} data-aos="fade-up-right">Visual Studio 2019</h3>
-                <h3 className={styles.zeta} data-aos="fade-down">IntteliJ IDEA Community Edition</h3>
-                <h3 className={styles.zeta} data-aos="fade-up">Apache NetBeans IDE 12.0</h3>
-                */}
               </div>
             </div>
 
