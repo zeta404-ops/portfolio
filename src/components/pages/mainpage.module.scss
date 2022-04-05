@@ -150,7 +150,7 @@
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10%;
+  padding: 5%;
 }
 
 .row::after {
@@ -184,7 +184,7 @@
 @media screen and (max-width: 800px){
 
   .row{
-    width: 200px;
+     width: 100%;
   }
   .explore,.contact,.zeta {
     font-size: 21px;

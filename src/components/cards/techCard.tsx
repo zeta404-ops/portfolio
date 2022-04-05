@@ -9,7 +9,7 @@ type TechCardProps = {
 const TechCard: React.FC<TechCardProps> = ({ className, techData }) => {
     console.log(techData.techLink)
   return (
-    <a href={techData.techLink} target={"_blank"} rel="noreferr">
+    <a href={techData.techLink} target={"_blank"} rel="noreferrer" >
         <img
             data-aos="fade-down"
             className={className}

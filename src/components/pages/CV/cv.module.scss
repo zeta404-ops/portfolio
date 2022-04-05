@@ -101,7 +101,13 @@
     display: table;
     margin-bottom: 30px;
   }
-
+  .row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5%;
+  }
 .awsPic1{
   width: 100px;
   height: 100px;
@@ -212,22 +218,21 @@ img:hover::before {
 }
 
 @media screen and (max-width: 800px){
-  
-.row{
-    width: 200px;
+
+  .row{
+     width: 100%;
   }
-  img{
-    width: 60%;
-    height: 60%;
+  .explore,.contact,.zeta {
+    font-size: 21px;
+
   }
 }
 
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+and (min-device-width : 375px) 
+and (max-device-width : 700px) 
 and (orientation : portrait) {
-  .row{
-  width: 400px;
-}}
-
+  .row2
+  {width: 210px;}
+}
 
