@@ -10,9 +10,9 @@ const Admin: React.FC<AdminProps> = () => {
 
     <div className={styles.container}>
 
-       <h2 className={styles.login}>Login</h2>
-       
-  </div>
+      <h2 className={styles.login}>Login</h2>
+
+    </div>
   )
 }
 

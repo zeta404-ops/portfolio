@@ -1,4 +1,4 @@
-.cfooter{
+.cfooter {
 
     padding: 20px;
     width: 100%;
@@ -15,25 +15,26 @@
 
 
 
-.copyright{
+.copyright {
     margin-right: 11px;
     color: #ffffff;
     text-decoration: none;
 }
 
-.ico1,.ico2{
+.ico1,
+.ico2 {
     display: inline-flex;
 }
 
-.ico2:hover{
+.ico2:hover {
 
-    a svg{
-        color: rgb(83, 83, 190) !important; 
-     }
+    a svg {
+        color: rgb(83, 83, 190) !important;
+    }
 }
 
-.ico1:hover{
-    a svg{
-        color: rgb(83, 83, 190) !important; 
-     }  
+.ico1:hover {
+    a svg {
+        color: rgb(83, 83, 190) !important;
+    }
 }

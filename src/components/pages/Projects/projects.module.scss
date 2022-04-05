@@ -3,84 +3,94 @@
 }
 
 .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #ccc;
- }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+}
 
 .zeta {
-    font-family: Trebuchet MS, sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-    color: white;
-    background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
-    padding: 8px;
-    margin: 80px;
-    text-align: center;
-    border-color: #685894;
-    box-shadow: 0 0 11px #685894;
-    border-radius: 25px;
+  font-family: Trebuchet MS, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+  padding: 8px;
+  margin: 80px;
+  text-align: center;
+  border-color: #685894;
+  box-shadow: 0 0 11px #685894;
+  border-radius: 25px;
+}
+
+.GitRepos {
+  max-height: 100px;
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 155em;
+  justify-content: space-around;
+  flex-flow: wrap;
+  cursor: pointer;
+  margin-bottom: 185px;
+
+}
+
+.unityGamesT1,
+.projects1 {
+  text-decoration: none;
+  padding: 20px;
+  width: 210px;
+}
+
+
+.projects1:hover {
+  animation: bloom ease-in-out .75s forwards;
+}
+
+.projects1:hover::before {
+  animation: circle .75s;
+}
+
+@keyframes bloom {
+  0% {
+    filter: grayscale(.8);
   }
 
-.GitRepos{
-    max-height: 100px;
-    display: flex;
-    flex-direction: row;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px 155em;
-    justify-content: space-around;
-    flex-flow: wrap;
-    cursor: pointer;
-    margin-bottom: 185px;
-    
-  }  
-
-  .unityGamesT1,.projects1{
-    text-decoration: none;
-    padding: 20px;
-    width: 210px;
+  40% {
+    filter: grayscale(.5);
   }
 
+  100% {
+    filter: grayscale(0);
+  }
+}
 
-  .projects1:hover{
-    animation: bloom ease-in-out .75s forwards;
-  }
-  .projects1:hover::before {
-    animation: circle .75s;
-  }
-  @keyframes bloom {
-    0% {
-      filter: grayscale(.8);
-    }
-    40% {
-      filter: grayscale(.5);
-    }
-    100% {
-      filter: grayscale(0);
-    }
+.container a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .zeta {
+    font-size: 22px;
   }
 
-  .container a{
-    text-decoration: none;
+  .repo1,
+  .repo2,
+  .repo3 {
+    width: 380px;
+    height: auto;
   }
-
-  @media screen and (max-width: 900px){
-    .zeta{
-      font-size: 22px;
-    }
-    .repo1, .repo2, .repo3{
-      width: 380px;
-      height: auto;
-    }
-  }
+}
 
 
-  
-@media screen and (max-width: 800px){
-  .unityGamesT1,.projects1{
+
+@media screen and (max-width: 800px) {
+
+  .unityGamesT1,
+  .projects1 {
     width: 170px;
   }
 }

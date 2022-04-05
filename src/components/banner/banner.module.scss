@@ -1,43 +1,44 @@
-.container{
-    background-image: url("../video/banner.gif");
-    width: 100%;
-    min-width: 100vw;
-    min-height: 500px;
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;  
-    background-image: linear-gradient(-2320deg, #6e45e2 0%, #88d3ce 100%);
+.container {
+  background-image: url("../video/banner.gif");
+  width: 100%;
+  min-width: 100vw;
+  min-height: 500px;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(-2320deg, #6e45e2 0%, #88d3ce 100%);
 }
 
-.textcss{
-    font-family: Trebuchet MS, sans-serif;
-    font-weight: 700;
-    font-size: 55px;
-    color: #ffffff;
-    position: absolute;
-    top: 27%;
-    left: 30%;
-    text-align: center;
-    user-select: none;
-    animation: blinker 7s linear infinite;
+.textcss {
+  font-family: Trebuchet MS, sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: #ffffff;
+  position: absolute;
+  top: 27%;
+  left: 30%;
+  text-align: center;
+  user-select: none;
+  animation: blinker 7s linear infinite;
 }
-.textcss2{
-    font-family: Trebuchet MS, sans-serif;
-    font-weight: 700;
-    font-size: 35px;
-    color: #e4e4e4;
-    position: absolute;
-    top: 35%;
-    left: 30%;
-    text-align: center;
-    user-select: none;
-    animation: blinker 4s linear infinite;
-    border-color: #fee2f8;
-    text-shadow: 0 0 2px #fee2f8;
+
+.textcss2 {
+  font-family: Trebuchet MS, sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: #e4e4e4;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  text-align: center;
+  user-select: none;
+  animation: blinker 4s linear infinite;
+  border-color: #fee2f8;
+  text-shadow: 0 0 2px #fee2f8;
 }
 
 @keyframes blinker {
@@ -46,33 +47,31 @@
   }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
 
-    .textcss{
-        left: 18%;
-        top: 15%;
-        font-size: 35px;
-    }
-    .textcss2{
-        top: 25%;
-      width: 40%;
-      font-size: 30px;
-    }
+  .textcss {
+    left: 18%;
+    top: 15%;
+    font-size: 35px;
   }
 
-  @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-  .textcss{
+  .textcss2 {
+    top: 25%;
+    width: 40%;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .textcss {
     left: 36%;
     top: 15%;
     font-size: 35px;
-}
-.textcss2{
+  }
+
+  .textcss2 {
     top: 21%;
-  width: 40%;
-  font-size: 30px;
+    width: 40%;
+    font-size: 30px;
+  }
 }
-}
-  

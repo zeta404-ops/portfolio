@@ -2,17 +2,17 @@ import React from 'react'
 import styles from './banner.module.scss'
 
 type BannerProps = {
-    text: string
-    text2: string
-    className: string
+  text: string
+  text2: string
+  className: string
 }
 
 const Banner: React.FC<BannerProps> = ({ text, text2, className }) => {
   return (
     <div className={styles.container}>
-        {/* <img className={styles.pic} src={banner} alt='Banner for web dev'/> */}
-        <h3 className={styles.textcss}>{text}</h3>
-        <h3 className={styles.textcss2}>{text2}</h3>
+      {/* <img className={styles.pic} src={banner} alt='Banner for web dev'/> */}
+      <h3 className={styles.textcss}>{text}</h3>
+      <h3 className={styles.textcss2}>{text2}</h3>
     </div>
   )
 }

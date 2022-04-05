@@ -1,4 +1,4 @@
-.sendbutton{
+.sendbutton {
     min-width: 100px;
     background: #685894;
     border: none;
@@ -9,9 +9,10 @@
     box-shadow: 0 0 11px #685894;
     border-radius: 25px;
 
-    
+
 }
-.cancelbutton{
+
+.cancelbutton {
     min-width: 100px;
     background: #808080;
     border: none;
@@ -24,19 +25,21 @@
 
 }
 
-.sendbutton:hover{
+.sendbutton:hover {
     background: #4c3885;
 }
 
-.cancelbutton:hover{
+.cancelbutton:hover {
     background: #1d1d1d;
 }
-.sendbuttonDiv{
+
+.sendbuttonDiv {
     align-items: center;
     text-align: center;
     border-radius: 25px;
 }
-.modaltitle{
+
+.modaltitle {
     font-family: Trebuchet MS, sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -45,7 +48,7 @@
     user-select: none;
 }
 
-.textinput{
+.textinput {
     font-family: Trebuchet MS, sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -54,10 +57,10 @@
     text-align: center;
     user-select: none;
     margin-bottom: 30px;
-    
+
 }
 
-.modalemail{
+.modalemail {
     font-family: Trebuchet MS, sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -66,10 +69,10 @@
     text-align: center;
     user-select: none;
     margin-bottom: 30px;
-    
+
 }
 
-.modalmessage{
+.modalmessage {
     font-family: Trebuchet MS, sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -78,11 +81,11 @@
     text-align: center;
     user-select: none;
     margin-bottom: 30px;
-    
+
 }
 
 
-.textinputlabel{
+.textinputlabel {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -90,14 +93,14 @@
     text-align: center;
 }
 
-.modalemaillabel{
+.modalemaillabel {
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 3px;
 }
 
-.modalmessagelabel{
+.modalmessagelabel {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -105,7 +108,7 @@
 }
 
 
-.aftersentmsg{
+.aftersentmsg {
     font-family: Trebuchet MS, sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -114,39 +117,42 @@
     user-select: none;
     background-image: linear-gradient(-20deg, #4c348d 0%, #424770 100%);
     border-radius: 25px;
-    
+
 }
 
-.contactPicDiv{
+.contactPicDiv {
     align-items: center;
     text-align: center;
 
 }
 
-.contactPic{
+.contactPic {
     width: 140px;
 }
-@media screen and (max-width: 800px){
 
-    
+@media screen and (max-width: 800px) {
 
-        .modalmessagelabelarea, .modalemaillabelarea, .textinputlabelarea{
-         width: 190px;
-         text-align: center;
-        }
-        .cancelbutton{
-         font-size: 13px;
-        }
 
-        .aftersentmsg{
-            
-            font-size: 32px;
-            
-            input{
-               margin-top: 30px;
-               padding: 30px;
-               margin-bottom: 30px;
-            }
+
+    .modalmessagelabelarea,
+    .modalemaillabelarea,
+    .textinputlabelarea {
+        width: 190px;
+        text-align: center;
+    }
+
+    .cancelbutton {
+        font-size: 13px;
+    }
+
+    .aftersentmsg {
+
+        font-size: 32px;
+
+        input {
+            margin-top: 30px;
+            padding: 30px;
+            margin-bottom: 30px;
         }
     }
-      
+}
